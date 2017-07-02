@@ -202,9 +202,13 @@ footer a:hover {
 
 /* Style container for hobbies and interests */
 .interests {
-	display: block;
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
+}
+
+/* Style container for hobbies and interests */
+.interestsContainer {
+	display: flex;
 	min-height: calc(100vh - 40rem);
 }
 
@@ -216,28 +220,28 @@ footer a:hover {
 
 /* Style container for film interests */
 .film {
+	display: block;
 	width: 20%;
-	float: left;
 }
 
 /* Style container for music interests */
 .music {
+	display: block;
 	width: 20%;
-	float: left;
 	padding-left: 6rem;
 }
 
 /* Style container for travel interests */
 .travel {
+	display: block;
 	width: 20%;
-	float: left;
 	padding-left: 6rem;
 }
 
 /* Style container for programming interests */
 .programming {
+	display: block;
 	width: 20%;
-	float: left;
 	padding-left: 6rem;
 }
 
