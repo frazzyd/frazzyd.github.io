@@ -1,0 +1,531 @@
+/* Set basic style which is consistent across all pages */
+body {
+	background-color: #E1E7EA;
+	font: 15px Cambria, Arial, Helvetica;
+	padding: 0;
+	margin: 0 auto;
+	color: #2E2E2E;
+}
+
+/* Style entire header */
+header {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* Banner */
+.banner {
+	background: url("../images/banners/sky-night-space-galaxy.jpeg");
+	background-size: 100% 150%;
+	background-repeat: no-repeat;
+	padding: 4rem;
+}
+
+/* Title on Banner */
+#bannerTitle {
+	color: white;
+	font-size: 72px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Link to homepage on banner */
+.homepage {
+	text-decoration: none;
+}
+
+/* Set the background for the top navigation bar */
+.topNav-background {
+	background-color: #34495E;
+	overflow: hidden;
+	border-bottom: 2px #2E2E2E solid;
+	min-height: 70px;
+}
+
+/* Center navigation buttons within navigation bar */
+.topNav-navigation {
+	width: 50rem;
+	margin: 0 auto;
+}
+
+/* Style navigation row */
+.topNav-navigation ul {
+	display: inline;
+}
+
+/* Style buttons in nav bar */
+.topNav-navigation li {
+	display: inline;
+}
+
+/* Style the links inside the top navigation buttons */
+.topNav-navigation a {
+	float: left;
+	width: 100px;
+	color: #F3F2F2;
+	text-align: center;
+	padding: 1.6rem;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* When the cursor hovers over each box set the following */
+.topNav-navigation a:hover {
+	background-color: #DDFAFD;
+	color: black;
+}
+
+/* Basic text contents of each page */
+.content {
+	text-align: center;
+	font-size: 16px;
+	min-height: calc(100vh - 15rem);
+}
+
+/* Style the sub title of each page */
+#pageTitle {
+	text-align: center;
+}
+
+/* Block containing social media links on Contact page */
+.socialMedia {
+	padding: 10px;
+	padding-bottom: 500px;
+	min-height: calc(100vh - 4rem);
+}
+
+/* Style all font awesome icons */
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Hover effect for Social Media Icons */
+.fa:hover {
+	opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+	background: #FFFFFF;
+	color: red;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+	background: #007BB6;
+	color: white;
+}
+
+/* Github */
+.fa-github {
+	background: #FFFFFF;
+	color: black;
+}
+
+/* Google Plus */
+.fa-google-plus {
+	background: white;
+	color: red;
+}
+
+/* Set the background for the bottom navigation bar */
+footer {
+	margin-top: 1rem;
+	height: 3rem;
+	background-color: #34495E;
+	padding: 1.5rem;
+}
+
+/* Style the links inside the bottom navigation bar */
+footer a {
+	color: #F3F2F2; /* Colour of text */
+	text-align: center;
+	padding: 1rem 1rem; /* Size of each block */
+	text-decoration: none; /* Remove underline on text */
+	font-size: 17px;
+	overflow: hidden;
+}
+
+/* When the cursor hovers over each box set the following */
+footer a:hover {
+	background-color: #DDFAFD;
+	color: black;
+}
+
+/* Block containing social media links on footer */
+.socialMediaFooter {
+	font-size: 30px;
+	text-decoration: none;
+	float: right;
+}
+
+/* Style each social media link */
+.socialMediaFooter a {
+	font-size: 20px;
+	margin: 0.1rem;
+	padding: 1.2rem;
+	text-decoration: none;
+	float: right;
+}
+
+/* Introduction to website on Home Page */
+.intro {
+	margin-right: 5rem;
+	margin: 0 auto;
+	width: 65%;
+}
+
+/* Style profile picture */
+#profile {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 2px solid #34495E;
+}
+
+/* Style container for hobbies and interests */
+.interests {
+	width: 80%;
+	margin: 0 auto;
+	min-height: calc(100vh - 40rem);
+}
+
+/* Style the icons for each interest */
+.interestsIcon {
+	width: 6rem;
+	height: 6rem;
+}
+
+/* Style container for film interests */
+.film {
+	width: 20%;
+	float: left;
+}
+
+/* Style container for music interests */
+.music {
+	width: 20%;
+	float: left;
+	padding-left: 6rem;
+}
+
+/* Style container for travel interests */
+.travel {
+	width: 20%;
+	float: left;
+	padding-left: 6rem;
+}
+
+/* Style container for programming interests */
+.programming {
+	width: 20%;
+	float: left;
+	padding-left: 6rem;
+}
+
+/* Center the gallery */
+.galleryContainer {
+	width: 70%;
+	margin: 0 auto;
+}
+
+/* Style entire gallery */
+.gallery {
+	flex-wrap: wrap;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: flex;
+}
+
+/* Set size of images in the gallery */
+.galleryImage {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border: 2px solid #34495E;
+}
+
+/* Set styles for Gallery */
+.galleryWrap {
+	position: relative;
+	width: 19rem;
+	height: 13rem;
+	padding: 5px;
+}
+
+/* Style the overlay which is displayed when an iamge is hovered over */
+.galleryOverlay {
+	position: absolute;
+	background: rgba(192,192,192,0.5);
+	visibility: hidden;
+	align-items: center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	margin-left: 0.3rem;
+	margin-top: 0.3rem;
+	justify-content: center;
+}
+
+/* Style the description shown in the overlay */
+.galleryDescription {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	transform: translateY(1em);
+	font-size: 1.25rem;
+	color: #FFFFFF;
+}
+
+/* Style the location given to each image */
+.galleryLocation {
+	font-size: 1rem;
+	margin-left: 0.4rem;
+}
+
+/* Style the date given to each image */
+.galleryDate {
+	font-size: 1rem;
+	margin-left: 0.4rem;
+}
+
+/* Stop text from changing when clicked on */
+.galleryOverlay a {
+	text-decoration: none;
+}
+
+/* Make overlay visible when hovering over image */
+.galleryWrap:hover .galleryOverlay {
+	visibility: visible;
+}
+
+/* Make description visible when hovering over image */
+.galleryWrap:hover .galleryDescription {
+	transform: translateY(0);
+}
+
+/* Adjust projects page */
+.projects {
+	padding: 3rem;
+}
+
+/* Adjust projects links */
+.projectsLink li{
+	list-style-type: none;
+	float: left;
+	color: white;
+}
+
+/* Style project boxes on Projects page */
+.projectsRow {
+	display: flex;
+}
+
+/* Projects for each item */
+.project-python {
+	background-color: #85A8BC;
+}
+.project-html {
+	background-color: #A3BFCE;
+}
+.project-js {
+	background-color: #85A8BC;
+}
+.project-java {
+	background-color: #A3BFCE;
+}
+.project-cisco {
+	background-color: #85A8BC;
+}
+.project-haskell {
+	background-color: #A3BFCE;
+}
+/* Make style consistent for each projects box */
+.project-html,
+.project-js,
+.project-python,
+.project-java,
+.project-haskell,
+.project-cisco {
+	width: 100%;
+	padding: 1rem 3rem 10rem 2rem;
+	margin: 0.3rem;
+	color: white;
+}
+
+/* Center skills table */
+.skillsContainer{
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Style information in each circle on Skills page */
+.mySkills {
+	display: flex;
+}
+
+/* Style each row on skills table */
+.mySkills tbody tr {
+	flex-wrap: wrap;
+	margin-left: 5.5%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: flex;
+}
+
+/* Style each column on skills table */
+.mySkills tbody tr td {
+	margin: 1rem;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	font-size: 30px;
+	color: #FFFFFF;
+	line-height: 300px;
+	text-align: center;
+	border: 2px solid #34495E;
+}
+
+/* Create circle for each piece of data in table on Skills page */
+.mySkills-sql {
+	background: #85A8BC;
+}
+.mySkills-sql:hover {
+	background: #34495E;
+	font-size: 40px;
+}
+
+.mySkills-java {
+	background: #A3BFCE;
+}
+.mySkills-java:hover {
+	background: #34495E;
+	font-size: 40px;
+}
+
+.mySkills-python {
+	background: #85A8BC;
+}
+.mySkills-python:hover {
+	background: #34495E;
+	font-size: 40px;
+}
+
+.mySkills-javascript {
+	background: #A3BFCE;
+}
+.mySkills-javascript:hover {
+	background: #34495E;
+	font-size: 40px;
+}
+
+.mySkills-html {
+	background: #85A8BC;
+}
+.mySkills-html:hover {
+	background: #34495E;
+	font-size: 40px;
+}
+
+.mySkills-cisco {
+	background: #A3BFCE;
+}
+.mySkills-cisco:hover {
+	background: #34495E;
+	font-size: 40px;
+}
+
+.mySkills-linux {
+	background: #85A8BC;
+}
+.mySkills-linux:hover {
+	background: #34495E;
+	font-size: 40px;
+}
+
+.mySkills-wireshark {
+	background: #A3BFCE;
+}
+.mySkills-wireshark:hover {
+	background: #34495E;
+	font-size: 40px;
+}
+
+.mySkills-office {
+	background: #85A8BC;
+}
+.mySkills-office:hover {
+	background: #34495E;
+	font-size: 40px;
+}
+
+.mySkills-css {
+	background: #A3BFCE;
+}
+.mySkills-css:hover {
+	background: #34495E;
+	font-size: 40px;
+}
+
+.mySkills-sleuth {
+	background: #85A8BC;
+}
+.mySkills-sleuth:hover {
+	background: #34495E;
+	font-size: 40px;
+}
+
+.mySkills-axure {
+	background: #A3BFCE;
+}
+.mySkills-axure:hover {
+	background: #34495E;
+	font-size: 40px;
+}
+
+.mySkills-windows {
+	background: #85A8BC;
+}
+.mySkills-windows:hover {
+	background: #34495E;
+	font-size: 40px;
+}
+
+.mySkills-haskell {
+	background: #A3BFCE;
+}
+.mySkills-haskell:hover {
+	background: #34495E;
+	font-size: 40px;
+}
+
+.mySkills-packettracer {
+	background: #85A8BC;
+}
+.mySkills-packettracer:hover {
+	background: #34495E;
+	font-size: 40px;
+}
