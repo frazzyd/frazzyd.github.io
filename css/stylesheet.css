@@ -338,7 +338,14 @@ footer a:hover {
 /* Adjust projects links */
 .projectsLink li{
 	list-style-type: none;
-	float: left;
+	display: block;
+	margin-right: 2rem;
+}
+
+/* Adjust projects links */
+.projectsLink a{
+	list-style-type: none;
+	text-decoration: none;
 	color: white;
 }
 

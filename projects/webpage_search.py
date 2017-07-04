@@ -19,6 +19,7 @@ def webSearch(url, searchTerm):
             print "Your search term, " + searchTerm + ", was successfully located."
         else:
             print "Your search term, " + searchTerm + ", was not found."
+            
     except IOError as error: # Provide error if URL cannot be located
         print 'Exception: URL not found: ' + str(error)
     except Exception as error: # Catch all other errors

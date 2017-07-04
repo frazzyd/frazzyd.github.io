@@ -2,7 +2,7 @@
 # Desc:      Create a random password of a given length.
 # Author:    Fraser Dumayne
 # Created:   12/09/2014
-# Updated:	 04/01/2017 - Added boilerplate and main
+# Updated:   04/01/2017 - Added boilerplate and main
 ######################################################################################################
 
 import random, sys
