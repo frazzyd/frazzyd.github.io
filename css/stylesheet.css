@@ -559,15 +559,13 @@ footer a:hover {
 /* Style for Mobile Phones */
 @media only screen and (max-width: 800px){
 	#bannerTitle {
-		font-size: 3.5rem;
+		font-size: 2rem;
 	}
 	.topNav-background {
 		overflow: hidden;
 		min-height: 40px;
 	}
 	.topNav-navigation {
-		width: 25.65rem;
-		vertical-align: top;
 		margin: auto;
 	}
 	.topNav-navigation a {
