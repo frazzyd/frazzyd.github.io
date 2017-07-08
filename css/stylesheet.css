@@ -551,21 +551,12 @@ footer a:hover {
 		font-size: 6px;
 	}
 	.topNav-background {
-	background-color: #34495E;
 	overflow: hidden;
-	border-bottom: 2px #2E2E2E solid;
 	min-height: 40px;
 	}
-	.topNav-navigation li {
-	display: inline;
-	}
 	.topNav-navigation a {
-	float: left;
 	width: 50px;
-	color: #FFFFFF;
-	text-align: center;
 	padding: 1rem;
-	text-decoration: none;
 	font-size: 12px;
 	}
 	.interestsIcon {
@@ -573,21 +564,17 @@ footer a:hover {
 	height: 2rem;
 	}
 	.film {
-	display: block;
 	width: 30%;
 	}
 	.music {
-	display: block;
 	width: 30%;
 	padding-left: 1rem;
 	}
 	.travel {
-	display: block;
 	width: 30%;
 	padding-left: 1rem;
 	}
 	.programming {
-	display: block;
 	width: 30%;
 	padding-left: 1rem;
 	}
@@ -595,18 +582,13 @@ footer a:hover {
 footer {
 	margin-top: 1rem;
 	height: 3rem;
-	background-color: #34495E;
 	padding: 1.5rem;
 }
 
 /* Style the links inside the bottom navigation bar */
 footer a {
-	color: #F3F2F2; /* Colour of text */
-	text-align: center;
 	padding: 1rem 1rem; /* Size of each block */
-	text-decoration: none; /* Remove underline on text */
 	font-size: 12px;
-	overflow: hidden;
 }
 
 /* Block containing social media links on footer */
