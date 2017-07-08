@@ -582,21 +582,21 @@ footer a:hover {
 .music {
 	display: block;
 	width: 20%;
-	padding-left: 6rem;
+	padding-left: 1rem;
 }
 
 /* Style container for travel interests */
 .travel {
 	display: block;
 	width: 20%;
-	padding-left: 6rem;
+	padding-left: 1rem;
 }
 
 /* Style container for programming interests */
 .programming {
 	display: block;
 	width: 20%;
-	padding-left: 6rem;
+	padding-left: 1rem;
 }
 
 }
