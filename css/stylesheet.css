@@ -621,9 +621,8 @@ footer a:hover {
 		float: none;
 	}
 	.siteLink {
-		padding-top: 4%;
-		padding-left: 38%;
-		padding-right: 38%;
+		width: 12rem;
+		margin: auto;
 	}
 	.projects {
 		width: 100%;
