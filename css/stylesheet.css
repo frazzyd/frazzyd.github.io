@@ -546,6 +546,12 @@ footer a:hover {
 	.interestsContainer{
 		width:100%;
 	}
+	.topNav-background {
+	background-color: #34495E;
+	overflow: hidden;
+	border-bottom: 2px #2E2E2E solid;
+	min-height: 40px;
+	}
 	.topNav-navigation li {
 	display: inline;
 	}
