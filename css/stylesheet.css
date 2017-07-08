@@ -544,7 +544,7 @@ footer a:hover {
 
 @media only screen and (max-width:800px){
 	.interestsContainer{
-		width:100px;
+		width:100%;
 	}
 	.topNav-navigation li {
 	display: inline;
