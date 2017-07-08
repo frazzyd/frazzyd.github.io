@@ -543,8 +543,12 @@ footer a:hover {
 }
 
 @media only screen and (max-width:800px){
+	#bannerTitle {
+	font-size: 32px;
+	}
 	.interestsContainer{
 		width:100%;
+		font-size: 6px;
 	}
 	.topNav-background {
 	background-color: #34495E;
