@@ -609,15 +609,15 @@ footer a:hover {
 		font-size: 1.5rem;
 	}
 	.socialMediaFooter {
-		width: 30%;
 		padding-top: 2%;
-		padding-left: 33%;
+		padding-left: 35%;
 		float: none;
 	}
 	.socialMediaFooter a {
 		font-size: 1.5rem;
 		margin: 0.1rem;
 		padding: 0.5rem;
+		float: none;
 	}
 	.siteLink {
 		padding-top: 4%;
