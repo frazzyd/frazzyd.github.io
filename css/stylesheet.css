@@ -623,8 +623,7 @@ footer a:hover {
 .project-haskell,
 .project-cisco {
 	font-size: 12px;
-	width: 20%;
-	padding: 1rem 3rem 5rem 2rem;
-	margin: 0.3rem;
+	width: 50%;
+	padding: 1rem;
 }
 }
