@@ -609,6 +609,7 @@ footer a:hover {
 		font-size: 1.5rem;
 	}
 	.socialMediaFooter {
+		width: 30%;
 		padding-top: 2%;
 		padding-left: 33%;
 		float: none;
