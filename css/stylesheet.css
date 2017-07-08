@@ -561,10 +561,6 @@ footer a:hover {
 	#bannerTitle {
 		font-size: 32px;
 	}
-	.interestsContainer{
-		width: 100%;
-		font-size: 0.6rem;
-	}
 	.topNav-background {
 		overflow: hidden;
 		min-height: 40px;
@@ -573,6 +569,10 @@ footer a:hover {
 		width: 50px;
 		padding: 1rem;
 		font-size: 12px;
+	}
+	.interestsContainer{
+		width: 100%;
+		font-size: 0.6rem;
 	}
 	.interestsIcon {
 		width: 2rem;
