@@ -611,5 +611,17 @@ footer a:hover {
 	}
 	.projects {
 		width: 100%;
+		padding: 1rem;
 	}
+	.project-html,
+.project-js,
+.project-python,
+.project-java,
+.project-haskell,
+.project-cisco {
+	width: 20%;
+	padding: 1rem 3rem 5rem 2rem;
+	margin: 0.3rem;
+	color: white;
+}
 }
