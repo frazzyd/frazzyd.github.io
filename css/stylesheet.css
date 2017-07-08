@@ -646,4 +646,22 @@ footer a:hover {
 		line-height: 100px;
 		font-size: 30px;
 	}
+	.mySkills-sql:hover,
+	.mySkills-java:hover,
+	.mySkills-python:hover,
+	.mySkills-javascript:hover,
+	.mySkills-html:hover,
+	.mySkills-cisco:hover,
+	.mySkills-linux:hover,
+	.mySkills-wireshark:hover,
+	.mySkills-office:hover,
+	.mySkills-css:hover,
+	.mySkills-sleuth:hover,
+	.mySkills-axure:hover,
+	.mySkills-windows:hover,
+	.mySkills-haskell:hover,
+	.mySkills-packettracer:hover {
+		font-size: 30px;
+	}
+
 }
