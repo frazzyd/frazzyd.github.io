@@ -610,7 +610,8 @@ footer a:hover {
 	}
 	.socialMediaFooter {
 		padding-top: 2%;
-		padding-right: 38%;
+		padding-left: 33%;
+		float: none;
 	}
 	.socialMediaFooter a {
 		font-size: 1.5rem;
