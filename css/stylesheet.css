@@ -550,74 +550,62 @@ footer a:hover {
 
 @media only screen and (max-width:800px){
 	#bannerTitle {
-	font-size: 32px;
+		font-size: 32px;
 	}
 	.interestsContainer{
 		width:100%;
 		font-size: 6px;
 	}
 	.topNav-background {
-	overflow: hidden;
-	min-height: 40px;
+		overflow: hidden;
+		min-height: 40px;
 	}
 	.topNav-navigation a {
-	width: 50px;
-	padding: 1rem;
-	font-size: 12px;
+		width: 50px;
+		padding: 1rem;
+		font-size: 12px;
 	}
 	.interestsIcon {
-	width: 2rem;
-	height: 2rem;
+		width: 2rem;
+		height: 2rem;
 	}
 	.film {
-	width: 30%;
+		width: 30%;
 	}
 	.music {
-	width: 30%;
-	padding-left: 1rem;
+		width: 30%;
+		padding-left: 1rem;
 	}
 	.travel {
-	width: 30%;
-	padding-left: 1rem;
+		width: 30%;
+		padding-left: 1rem;
 	}
 	.programming {
-	width: 30%;
-	padding-left: 1rem;
+		width: 30%;
+		padding-left: 1rem;
 	}
-/* Set the background for the bottom navigation bar */
-footer {
-	margin-top: 1rem;
-	height: 7rem;
-	padding: 1.5rem;
-}
-
-/* Style the links inside the bottom navigation bar */
-footer a {
-	padding: 1rem 1rem; /* Size of each block */
-	font-size: 12px;
-}
-
-/* Block containing social media links on footer */
-.socialMediaFooter {
-	font-size: 10px;
-	text-decoration: none;
-	float: right;
-	padding-bottom: 2%;
-	padding-right: 22%;
-	padding-top: 5%;
-}
-
-/* Style each social media link */
-.socialMediaFooter a {
-	font-size: 20px;
-	margin: 0.1rem;
-	padding: 0.5rem;
-	text-decoration: none;
-	float: right;
-}
-.siteLink{
-	padding-top: 5%;
-	padding-left: 25%;
-}
-
+	footer {
+		margin-top: 1rem;
+		height: 7rem;
+		padding: 1.5rem;
+	}
+	footer a {
+		padding: 1rem 1rem; /* Size of each block */
+		font-size: 12px;
+	}
+	.socialMediaFooter {
+		font-size: 10px;
+		padding-bottom: 2%;
+		padding-right: 22%;
+		padding-top: 5%;
+	}
+	.socialMediaFooter a {
+		font-size: 20px;
+		margin: 0.1rem;
+		padding: 0.5rem;
+	}
+	.siteLink{
+		padding-top: 5%;
+		padding-left: 25%;
+	}
 }
