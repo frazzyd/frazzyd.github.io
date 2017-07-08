@@ -572,31 +572,58 @@ footer a:hover {
 	width: 2rem;
 	height: 2rem;
 	}
-	/* Style container for film interests */
-.film {
+	.film {
 	display: block;
 	width: 30%;
-}
-
-/* Style container for music interests */
-.music {
+	}
+	.music {
 	display: block;
 	width: 30%;
 	padding-left: 1rem;
-}
-
-/* Style container for travel interests */
-.travel {
+	}
+	.travel {
 	display: block;
 	width: 30%;
 	padding-left: 1rem;
-}
-
-/* Style container for programming interests */
-.programming {
+	}
+	.programming {
 	display: block;
 	width: 30%;
 	padding-left: 1rem;
+	}
+/* Set the background for the bottom navigation bar */
+footer {
+	margin-top: 1rem;
+	height: 3rem;
+	background-color: #34495E;
+	padding: 1.5rem;
+}
+
+/* Style the links inside the bottom navigation bar */
+footer a {
+	color: #F3F2F2; /* Colour of text */
+	text-align: center;
+	padding: 1rem 1rem; /* Size of each block */
+	text-decoration: none; /* Remove underline on text */
+	font-size: 12px;
+	overflow: hidden;
+}
+
+/* Block containing social media links on footer */
+.socialMediaFooter {
+	font-size: 10px;
+	text-decoration: none;
+	float: right;
+	padding-bottom: 3rem;
+}
+
+/* Style each social media link */
+.socialMediaFooter a {
+	font-size: 20px;
+	margin: 0.1rem;
+	padding: 0.5rem;
+	text-decoration: none;
+	float: right;
 }
 
 }
