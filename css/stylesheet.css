@@ -611,11 +611,11 @@ footer a:hover {
 	}
 	.projects {
 		font-size:8px;
-		width: 60%;
+		width: 100%;
 		padding: 0.2rem;
 	}
 	.projectsRow {
-		width:60%;
+		width:100%;
 	}
 	.project-html,
 .project-js,
