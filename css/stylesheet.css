@@ -612,12 +612,10 @@ footer a:hover {
 	.projects {
 		font-size:8px;
 		width: 60%;
-		padding: 0.5rem;
-		display:block;
+		padding: 0.2rem;
 	}
 	.projectsRow {
 		width:60%;
-		display:block;
 	}
 	.project-html,
 .project-js,
@@ -625,6 +623,6 @@ footer a:hover {
 .project-java,
 .project-haskell,
 .project-cisco {
-	width: 50%;
+	width: 30%;
 }
 }
