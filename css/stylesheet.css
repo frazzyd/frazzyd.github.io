@@ -583,15 +583,15 @@ footer a:hover {
 	}
 	.music {
 		width: 30%;
-		padding-left: 1rem;
+		padding-left: 0.4rem;
 	}
 	.travel {
 		width: 30%;
-		padding-left: 1rem;
+		padding-left: 0.4rem;
 	}
 	.programming {
 		width: 30%;
-		padding-left: 1rem;
+		padding-left: 0.4rem;
 	}
 	footer {
 		margin-top: 1rem;
