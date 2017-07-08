@@ -610,9 +610,10 @@ footer a:hover {
 		padding-left: 25%;
 	}
 	.projects {
-		font-size:10px;
-		width: 100%;
-		padding: 1rem;
+		font-size:8px;
+		width: 60%;
+		padding: 0.5rem;
+		display:block;
 	}
 	.projectsRow {
 		width:60%;
@@ -625,6 +626,5 @@ footer a:hover {
 .project-haskell,
 .project-cisco {
 	width: 50%;
-	padding: 1rem;
 }
 }
