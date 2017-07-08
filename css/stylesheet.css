@@ -582,22 +582,22 @@ footer a:hover {
 	.film {
 		margin: auto;
 		width: 50%;
-		padding-left: 0.3rem;
+		padding-left: 0;
 	}
 	.music {
 		margin: auto;
 		width: 50%;
-		padding-left: 0.3rem;
+		padding-left: 0;
 	}
 	.travel {
 		margin: auto;
 		width: 50%;
-		padding-left: 0.3rem;
+		padding-left: 0;
 	}
 	.programming {
 		margin: auto;
 		width: 50%;
-		padding-left: 0.3rem;
+		padding-left: 0;
 	}
 	footer {
 		margin-top: 1rem;
