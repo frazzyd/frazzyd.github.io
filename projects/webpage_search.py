@@ -1,10 +1,7 @@
 # Script:    webpage_search.py
-# Desc:      Search a given webpage for a given search term using BeautifulSoup.
 # Author:    Fraser Dumayne
-# Created:   20/10/2014
-# Updated:   04/01/2017 - Added boilerplate, main and error handling
-######################################################################################################
-
+# Created:   29/06/2017
+# Desc:      Search a given webpage for a given search term using BeautifulSoup.
 
 import sys, bs4, urllib2
         

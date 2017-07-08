@@ -1,9 +1,8 @@
 # Script:    passwordgenerator.py
-# Desc:      Create a random password of a given length.
 # Author:    Fraser Dumayne
-# Created:   12/09/2014
+# Created:   ~2014
 # Updated:   04/01/2017 - Added boilerplate and main
-######################################################################################################
+# Desc:      Create a random password of a given length.
 
 import random, sys
 
