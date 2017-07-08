@@ -565,6 +565,10 @@ footer a:hover {
 		overflow: hidden;
 		min-height: 40px;
 	}
+	.topNav-navigation {
+		width: 26rem;
+		margin: auto;
+	}
 	.topNav-navigation a {
 		width: 50px;
 		padding: 1rem;
