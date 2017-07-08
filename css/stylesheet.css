@@ -571,5 +571,32 @@ footer a:hover {
 	.interestsIcon {
 	width: 2rem;
 	height: 2rem;
+	}
+	/* Style container for film interests */
+.film {
+	display: flex;
+	width: 20%;
 }
+
+/* Style container for music interests */
+.music {
+	display: flex;
+	width: 20%;
+	padding-left: 2rem;
+}
+
+/* Style container for travel interests */
+.travel {
+	display: flex;
+	width: 20%;
+	padding-left: 2rem;
+}
+
+/* Style container for programming interests */
+.programming {
+	display: flex;
+	width: 20%;
+	padding-left: 2rem;
+}
+
 }
