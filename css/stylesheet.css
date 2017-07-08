@@ -601,18 +601,18 @@ footer a:hover {
 	}
 	footer {
 		margin-top: 1rem;
-		height: 7rem;
+		height: 25rem;
 		padding: 1.5rem;
 	}
 	footer a {
-		padding: 1rem 1rem;
+		display: block;
 		font-size: 12px;
 	}
 	.socialMediaFooter {
-		font-size: 10px;
 		padding-bottom: 2%;
-		padding-right: 22%;
-		padding-top: 5%;
+		padding-right: 35%;
+		padding-left: 35%;
+		padding-top: 2%;
 	}
 	.socialMediaFooter a {
 		font-size: 20px;
@@ -620,8 +620,9 @@ footer a:hover {
 		padding: 0.5rem;
 	}
 	.siteLink {
-		padding-top: 5%;
-		padding-left: 25%;
+		padding-top: 4%;
+		padding-left: 38%;
+		padding-right: 38%;
 	}
 	.projects {
 		width: 100%;
