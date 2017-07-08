@@ -603,8 +603,8 @@ footer a {
 	text-decoration: none;
 	float: right;
 	padding-bottom: 2%;
-	padding-right: 40%;
-	padding-top: 7%;
+	padding-right: 30%;
+	padding-top: 5%;
 }
 
 /* Style each social media link */
@@ -616,7 +616,7 @@ footer a {
 	float: right;
 }
 .siteLink{
-	padding-top: 2%;
+	padding-top: 5%;
 	padding-left: 5%;
 }
 
