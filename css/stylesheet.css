@@ -379,13 +379,21 @@ footer a:hover {
 .project-haskell {
 	background-color: #A3BFCE;
 }
+.project-msoffice {
+	background-color: #85A8BC;
+}
+.project-axure {
+	background-color: #A3BFCE;
+}
 /* Make style consistent for each projects box */
 .project-html,
 .project-js,
 .project-python,
 .project-java,
 .project-haskell,
-.project-cisco {
+.project-cisco,
+.project-msoffice,
+.project-axure {
 	width: 100%;
 	padding: 1rem 3rem 10rem 2rem;
 	margin: 0.3rem;
@@ -622,7 +630,9 @@ footer a:hover {
 .project-python,
 .project-java,
 .project-haskell,
-.project-cisco {
+.project-cisco,
+.project-msoffice,
+.project-axure {
 	width: 5%;
 }
 }
