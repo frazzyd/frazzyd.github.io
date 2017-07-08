@@ -169,6 +169,12 @@ footer a:hover {
 	color: black;
 }
 
+/* Style the site URL */
+.siteLink {
+	padding-left: 1em;
+	color: white;
+}
+
 /* Block containing social media links on footer */
 .socialMediaFooter {
 	font-size: 30px;
@@ -596,7 +602,9 @@ footer a {
 	font-size: 10px;
 	text-decoration: none;
 	float: right;
-	padding-bottom: 3rem;
+	padding-bottom: 2%;
+	padding-right: 40%;
+	padding-top: 2%;
 }
 
 /* Style each social media link */
@@ -606,6 +614,9 @@ footer a {
 	padding: 0.5rem;
 	text-decoration: none;
 	float: right;
+}
+.siteLink{
+	padding-left: 40%;
 }
 
 }
