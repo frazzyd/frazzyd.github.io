@@ -610,7 +610,7 @@ footer a:hover {
 	}
 	.socialMediaFooter {
 		padding-top: 2%;
-		padding-left: 35%;
+		transform: translate(35%, -5%);
 		float: none;
 	}
 	.socialMediaFooter a {
