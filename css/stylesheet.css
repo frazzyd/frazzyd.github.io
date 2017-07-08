@@ -622,10 +622,10 @@ footer a:hover {
 		padding: 0.2rem;
 	}
 	.projectsRow {
-		width:100%;
+		width: 100%;
 	}
 	.projectsLink li{
-		float: left;
+		width: 100%;
 		margin-right: 0;
 	}
 	.project-html,
@@ -636,9 +636,8 @@ footer a:hover {
 	.project-cisco,
 	.project-msoffice,
 	.project-axure {
-		font-size:8px;
+		font-size: 8px;
 		padding: 0;
-		margin: 0 auto;
 		width: 30%;
 	}
 }
