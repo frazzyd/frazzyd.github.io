@@ -575,27 +575,27 @@ footer a:hover {
 	/* Style container for film interests */
 .film {
 	display: block;
-	width: 10%;
+	width: 30%;
 }
 
 /* Style container for music interests */
 .music {
 	display: block;
-	width: 10%;
+	width: 30%;
 	padding-left: 1rem;
 }
 
 /* Style container for travel interests */
 .travel {
 	display: block;
-	width: 10%;
+	width: 30%;
 	padding-left: 1rem;
 }
 
 /* Style container for programming interests */
 .programming {
 	display: block;
-	width: 10%;
+	width: 30%;
 	padding-left: 1rem;
 }
 
