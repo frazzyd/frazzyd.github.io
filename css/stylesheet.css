@@ -564,4 +564,8 @@ footer a:hover {
 	text-decoration: none;
 	font-size: 12px;
 	}
+	.interestsIcon {
+	width: 2rem;
+	height: 2rem;
+}
 }
