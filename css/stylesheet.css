@@ -572,26 +572,32 @@ footer a:hover {
 	}
 	.interestsContainer{
 		width: 100%;
-		font-size: 0.6rem;
+		font-size: 1rem;
+		display: block;
 	}
 	.interestsIcon {
 		width: 2rem;
 		height: 2rem;
 	}
 	.film {
+		margin: auto;
 		width: 30%;
+		padding-left: 1rem;
 	}
 	.music {
+		margin: auto;
 		width: 30%;
-		padding-left: 0.4rem;
+		padding-left: 1rem;
 	}
 	.travel {
+		margin: auto;
 		width: 30%;
-		padding-left: 0.4rem;
+		padding-left: 1rem;
 	}
 	.programming {
+		margin: auto;
 		width: 30%;
-		padding-left: 0.4rem;
+		padding-left: 1rem;
 	}
 	footer {
 		margin-top: 1rem;
