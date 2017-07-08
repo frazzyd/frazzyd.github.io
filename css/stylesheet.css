@@ -548,7 +548,8 @@ footer a:hover {
 	font-size: 40px;
 }
 
-@media only screen and (max-width:800px){
+/* Style for Mobile Phones */
+@media only screen and (max-width: 800px){
 	#bannerTitle {
 		font-size: 32px;
 	}
@@ -604,8 +605,11 @@ footer a:hover {
 		margin: 0.1rem;
 		padding: 0.5rem;
 	}
-	.siteLink{
+	.siteLink {
 		padding-top: 5%;
 		padding-left: 25%;
+	}
+	.projects {
+		width: 100%;
 	}
 }
