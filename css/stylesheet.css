@@ -341,11 +341,18 @@ footer a:hover {
 	padding: 3rem;
 }
 
-/* Adjust projects links */
+/* Adjust projects link tables */
+.projects ul {
+	padding-left: 1rem;
+	
+}
+/* Adjust projects table items */
 .projectsLink li{
-	list-style-type: none;
-	display: block;
+	float: left;
+	width: 100%;
+	display: flex;
 	margin-right: 2rem;
+	padding-bottom: 1rem;
 }
 
 /* Adjust projects links */
