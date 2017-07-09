@@ -635,10 +635,6 @@ footer a:hover {
 	.projectsRow {
 		width: 100%;
 	}
-	.projectsLink a{
-		width: 100%;
-		padding-right: 5%;
-	}
 	.project-html,
 	.project-js,
 	.project-python,
