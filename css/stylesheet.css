@@ -350,8 +350,6 @@ footer a:hover {
 
 /* Adjust projects links */
 .projectsLink a{
-	list-style-type: none;
-	text-decoration: none;
 	color: white;
 }
 
