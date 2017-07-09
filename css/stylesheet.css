@@ -341,18 +341,11 @@ footer a:hover {
 	padding: 3rem;
 }
 
-/* Adjust projects link tables */
-.projects ul {
-	padding-left: 1rem;
-	
-}
-/* Adjust projects table items */
+/* Adjust projects links */
 .projectsLink li{
-	float: left;
-	width: 100%;
-	display: flex;
+	list-style-type: none;
+	display: block;
 	margin-right: 2rem;
-	padding-bottom: 1rem;
 }
 
 /* Adjust projects links */
@@ -404,7 +397,6 @@ footer a:hover {
 	margin: 0.3rem;
 	color: white;
 }
-
 /* Center skills table */
 .skillsContainer{
 	width: 80%;
@@ -632,13 +624,26 @@ footer a:hover {
 	.siteLink {
 		width: 12rem;
 		margin: auto;
-	}
 	.projects {
 		width: 100%;
 		padding: 0.2rem;
 	}
+	.projects ul {
+		padding-left: 1rem;
+	}
+	.projectsLink li{
+		float: left;
+		width: 100%;
+		display: flex;
+		margin-right: 2rem;
+		padding-bottom: 1rem;
+	}
+	.projectsLink a{
+		color: white;
+	}
 	.projectsRow {
 		width: 100%;
+		display: flex;
 	}
 	.project-html,
 	.project-js,
