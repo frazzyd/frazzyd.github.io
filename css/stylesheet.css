@@ -92,9 +92,6 @@ header {
 .socialMedia {
 }
 
-.contactForm {
-		padding-left: 40rem;
-}
 /* Style all font awesome icons */
 .fa {
 	padding: 20px;
@@ -553,7 +550,7 @@ footer a:hover {
 		width: 12rem;
 		margin: auto;
 	}
-	
+
 	.projects {
 		width: 100%;
 		padding: 0.2rem;
