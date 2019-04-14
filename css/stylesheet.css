@@ -184,6 +184,8 @@ footer a:hover {
 	margin-right: 5rem;
 	margin: 0 auto;
 	width: 65%;
+	text-align: center;
+	font-size: 1.5rem;
 }
 
 /* Style profile picture */
@@ -195,14 +197,16 @@ footer a:hover {
 
 /* Style container for hobbies and interests */
 .interests {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 }
 
 /* Style container for hobbies and interests */
-.interestsContainer {
+.interestsContainer1,
+.interestsContainer2 {
 	display: flex;
 	min-height: calc(100vh - 40rem);
+	justify-content: center;
 }
 
 /* Style the icons for each interest */
@@ -212,30 +216,35 @@ footer a:hover {
 }
 
 /* Style container for film interests */
-.film {
+.cybersecurity,
+.travel,
+.photography,
+.music,
+.film,
+.fitness {
 	display: block;
-	width: 20%;
-	padding-left: 6rem;
+	width: 50%;
+	padding-left: 5rem;
+	padding-right: 5rem;
 }
 
-/* Style container for music interests */
-.music {
-	display: block;
-	width: 20%;
-	padding-left: 6rem;
+.imageCyber,
+.imagePhoto,
+.imageTravel,
+.imageMusic,
+.imageFilm,
+.imageFitness {
+	padding-top: 2rem;
 }
 
-/* Style container for travel interests */
-.travel {
-	display: block;
-	width: 20%;
-	padding-left: 6rem;
-}
-
-/* Style container for programming interests */
-.cybersecurity {
-	display: block;
-	width: 20%;
+.textCyber,
+.textPhoto,
+.textTravel,
+.textMusic,
+.textFilm,
+.textFitness {
+		text-align: center;
+		font-size: 1.3rem;
 }
 
 /* Center the gallery */
