@@ -127,22 +127,10 @@ header {
 	color: white;
 }
 
-/* Youtube */
-.fa-youtube {
-	background: #FFFFFF;
-	color: red;
-}
-
 /* LinkedIn */
 .fa-linkedin {
 	background: #007BB6;
 	color: white;
-}
-
-/* Github */
-.fa-github {
-	background: #FFFFFF;
-	color: black;
 }
 
 /* Set the background for the bottom navigation bar */
@@ -203,7 +191,6 @@ footer a:hover {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	border: 2px solid #34495E;
 }
 
 /* Style container for hobbies and interests */
