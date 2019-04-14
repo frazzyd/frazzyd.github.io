@@ -90,11 +90,11 @@ header {
 
 /* Block containing social media links on Contact page */
 .socialMedia {
-	padding: 10px;
-	padding-bottom: 500px;
-	min-height: calc(100vh - 4rem);
 }
 
+.contactForm {
+		padding-left: 40rem;
+}
 /* Style all font awesome icons */
 .fa {
 	padding: 20px;
