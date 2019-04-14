@@ -496,7 +496,8 @@ footer a:hover {
 		padding: 1rem;
 		font-size: 12px;
 	}
-	.interestsContainer{
+	.interestsContainer1,
+	.interestsContainer2{
 		width: 100%;
 		font-size: 1rem;
 		display: block;
