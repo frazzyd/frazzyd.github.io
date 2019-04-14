@@ -204,6 +204,7 @@ footer a:hover {
 	display: flex;
 	min-height: calc(100vh - 40rem);
 	justify-content: center;
+	padding: 3rem;
 }
 
 /* Style the icons for each interest */
