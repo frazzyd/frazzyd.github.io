@@ -123,7 +123,7 @@ header {
 
 /* Twitter */
 .fa-twitter {
-	background: #55ACEE;
+	background: #FFFFFF;
 	color: white;
 }
 
@@ -143,12 +143,6 @@ header {
 .fa-github {
 	background: #FFFFFF;
 	color: black;
-}
-
-/* Google Plus */
-.fa-google-plus {
-	background: white;
-	color: red;
 }
 
 /* Set the background for the bottom navigation bar */
