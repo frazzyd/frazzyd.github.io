@@ -511,7 +511,7 @@ button[type=submit] {
 
 /* Change colour when hovering over submit */
 button[type=submit]:hover {
-  background-color: #ffb3d9;
+  background-color: #ffb3d8;
 }
 
 /* Style for Mobile Phones */
