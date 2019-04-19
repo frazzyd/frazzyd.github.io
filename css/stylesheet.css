@@ -478,6 +478,42 @@ footer a:hover {
 	font-size: 40px;
 }
 
+/* Style the contact form */
+.contactForm {
+	background: #34495E;
+	width: 25%;
+  padding: 25px;
+	border-radius: 10px;
+	display: inline-table;
+}
+
+/* Style the contact form text boxes */
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+/* Style the contact form submit button */
+button[type=submit] {
+  background-color: #A3BFCE;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Change colour when hovering over submit */
+button[type=submit]:hover {
+  background-color: #ffb3d9;
+}
+
 /* Style for Mobile Phones */
 @media only screen and (max-width: 800px){
 	#bannerTitle {
