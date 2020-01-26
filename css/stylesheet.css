@@ -1,7 +1,7 @@
 /* Set basic style which is consistent across all pages */
 body {
 	background-color: #FFFFFF;
-	font: 15px Cambria, Arial, Helvetica;
+	font: 15px Helvetica;
 	padding: 0;
 	margin: 0 auto;
 	color: #2E2E2E;
@@ -39,6 +39,7 @@ header {
 .topNav-background {
 	background-color: #34495E;
 	overflow: hidden;
+	border-bottom: 2px #2E2E2E solid;
 	min-height: 70px;
 }
 
@@ -181,7 +182,7 @@ footer a:hover {
 	margin: 0 auto;
 	width: 65%;
 	text-align: center;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 }
 
 /* Style profile picture */
@@ -242,6 +243,49 @@ footer a:hover {
 .textFitness {
 	text-align: center;
 	font-size: 1.3rem;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 50%;
+	padding-left: 50px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 25%;
+	padding-right: 50px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: #34495E;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /* Center the gallery */
@@ -511,9 +555,8 @@ button[type=submit] {
 
 /* Change colour when hovering over submit */
 button[type=submit]:hover {
-  background-color: #ffb3d8;
+  background-color: #ffb3d9;
 }
-
 /* Style for Mobile Phones */
 @media only screen and (max-width: 800px){
 	#bannerTitle {
