@@ -1,0 +1,941 @@
+/* Set basic style which is consistent across all pages */
+body {
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0 auto;
+	color: #2f2f2f;
+	letter-spacing: 0.05rem;
+	line-height: 1.9rem;	
+}
+
+/* Banner */
+.banner {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/banners/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: cover;	
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 23rem;
+	background-position: 100% 25%;
+	width: 100%;
+}
+
+.banner > div {
+    width: 33.33333%;
+}
+@media (max-width: 768px) {
+    .banner > div {
+        width: 100%;
+    }
+}
+
+/* Title on Banner */
+.bannerTitle h1{
+	color: white;
+	font-size: 2rem;
+	width: auto;
+}
+
+/* Title on Banner */
+.bannerTitle {
+	justify-content: center;
+	width: auto;
+	padding-left: 4rem;
+	margin-top: 0.6rem;
+}
+
+/* Banner navigation links */
+.bannerNav {
+	text-decoration: none;
+	justify-content: center;
+	width: auto;
+}
+
+.bannerNav ul {
+	padding: 0.2rem;
+	display: flex;
+	justify-content: center;
+}
+
+/* Style navigation links by row */
+.bannerNav ul li {
+	display: inline;
+}
+
+.bannerNav a {
+	display: flex;
+	justify-content: center;
+	font-size: 1.21rem;
+	padding: 1.32rem;
+}
+
+.bannerSocial {
+	font-size: 1.5rem;
+	width: 16rem;
+	text-decoration: none;
+	padding-right: 3rem;
+}
+
+/* Banner social links */
+.bannerSocial ul li{
+		display: flex;
+		justify-content: center;
+		text-decoration: none;
+}
+
+/* Block containing social media links on footer */
+.socialMediaHeader {
+	text-decoration: none;
+	width: 16rem;
+	float:right;
+}
+
+/* Style header social links */
+.socialMediaHeader a {
+	width: 1.1rem;
+	height: 1.1rem;
+	font-size: 1.3rem;
+	color: white;
+	background-color: inherit;
+	text-decoration: none;
+	float: right;
+	margin: 0.2rem;
+	padding: 1.1rem;
+}
+
+/* Style the links inside the top navigation buttons */
+.bannerNav a {
+	color: #F3F2F2;
+	text-decoration: none;
+}
+
+/* Hover effect for navigator pages Icons */
+.bannerNav a:hover {
+	opacity: 0.7;
+}
+
+/* Define what happens to nav bar when you are on specific page */
+#index .bannerNav .index,
+#blog .bannerNav .blog,
+#gallery .bannerNav .gallery,
+#projects .bannerNav .Projects,
+#skills .bannerNav .skills,
+#contact .bannerNav .contact {
+  font-weight: bold;
+}
+
+/* Basic text contents of each page */
+.content {
+	text-align: center;
+	min-height: calc(100vh - 15rem);
+}
+
+/* Style the sub title of each page */
+.pageTitle {
+	padding-top:1rem;
+	padding-bottom: 1rem;
+	font-size: 2.5rem;
+	color: #2e2e2e;
+}
+
+/* Style profile picture */
+#profile {
+	width: 14rem;
+	height: 14rem;
+	border-radius: 20%;
+	margin-top:-7rem;
+	border:0.8rem solid white;
+}
+
+/* Style all font awesome icons*/
+.fa {
+	padding: 1.05rem;
+	font-size: 2rem;
+	text-align: center;
+}
+
+/* Hover effect for Social Media Icons */
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-github {
+	background: #3B5998;
+	color: white;
+	width: auto;
+	height: auto;
+	border-radius: 80%
+}
+
+.fa-instagram {
+	background: #ffb3d9;
+	color: white;
+	width: auto;
+	height: auto;
+	border-radius:80%;
+}
+
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+	width: auto;
+	height: auto;
+	border-radius:80%;
+}
+
+.fa-linkedin {
+	background: #007BB6;
+	color: white;
+	width: auto;
+	height: auto;
+	border-radius:80%;
+}
+
+
+/* Set the background for the bottom navigation bar */
+footer {
+	margin-top: 1rem;
+	background-color: #c27c93;
+	padding: 3rem;
+}
+
+/* Style the links inside the bottom navigation bar */
+footer a {
+	color: #F3F2F2; /* Colour of text */
+	text-align: center;
+	padding: 1rem 1rem; /* Size of each block */
+	text-decoration: none; /* Remove underline on text */
+	font-size: 1.2rem;
+	overflow: hidden;
+}
+
+/* Style the site URL */
+.siteLink {
+	font-size: 1.2rem;
+	padding-left: 1rem;
+	padding-top: 1rem;
+	color: white;
+}
+
+/* Block containing social media links on footer */
+.socialMediaFooter {
+	text-decoration: none;
+	float: right;
+}
+
+/* When the cursor hovers over each box set the following */
+footer i:hover {
+	background-color: #DDFAFD;
+	color: black;
+	width: auto;
+	height: auto;
+	border-radius: 80%;
+}
+
+/* Style each social media link */
+.socialMediaFooter a {
+	text-decoration: none;
+}
+/* Block containing social media links on footer */
+.socialMedia {
+	font-size: 30px;
+	text-decoration: none;
+}
+
+/* Style each social media link */
+.socialMedia a {
+	font-size: 20px;
+	margin: 0.3rem;
+	padding: 1.5rem;
+	text-decoration: none;
+}
+
+.footerLink:hover {
+	background-color: #DDFAFD;
+	color: black;
+}
+
+/***********************************HOME BEGIN***********************************/
+/* Introduction to website on Home Page */
+.intro {
+	margin-right: 5rem;
+	margin: 0 auto;
+	width: 85%;
+	text-align: center;
+	font-size: 1.05rem;
+}
+
+/* Style container for hobbies and interests */
+.interests {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Style container for hobbies and interests */
+.interestsContainer1,
+.interestsContainer2 {
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+}
+
+/* Style the icons for each interest */
+.interestsIcon {
+	width: 6rem;
+	height: 6rem;
+}
+
+/* Style container for film interests */
+.cybersecurity,
+.travel,
+.photography,
+.music,
+.film,
+.fitness {
+	display: block;
+	width: 50%;
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
+.imageCyber,
+.imagePhoto,
+.imageTravel,
+.imageMusic,
+.imageFilm,
+.imageFitness {
+	padding-top: 2rem;
+}
+
+.textCyber,
+.textPhoto,
+.textTravel,
+.textMusic,
+.textFilm,
+.textFitness {
+	text-align: center;
+	font-size: 1.05rem;
+}
+/***********************************HOME END***********************************/
+
+/***********************************BLOG BEGIN***********************************/
+/* Add a card effect for articles */
+.card {
+   background-color: #FFFFFF;
+   padding: 2rem;
+   margin-top: 20px;
+	 margin-left: 20rem;
+	 margin-right: 20rem;
+	 border-top: 2px solid grey;
+	 padding-bottom: 2rem;
+	 border-bottom: 2px solid grey;
+}
+
+.blogImage-1 {
+	display: inline;
+	height:12rem;
+	width:30rem;
+}
+
+.blogLink {
+	color:#c27c93;
+}
+
+/***********************************BLOG END***********************************/
+
+/***********************************GALLERY BEGIN***********************************/
+.galleryRow {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.galleryColumn {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+	box-sizing: border-box;
+}
+
+.galleryColumn img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Set styles for Gallery */
+.galleryWrap {
+	position: relative;
+	padding: 5px;
+}
+
+/* Style the overlay which is displayed when an iamge is hovered over */
+.galleryOverlay {
+	position: absolute;
+	background: rgba(192,192,192,0.5);
+	visibility: hidden;
+	align-items: center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+}
+
+/* Style the description shown in the overlay */
+.galleryDate {
+	transform: translateY(1em);
+	font-size: 1rem;
+	color: #FFFFFF;
+}
+
+/* Style the location given to each image */
+.galleryLocation {
+	font-size: 2rem;
+	margin-left: 0.4rem;
+	color: #FFFFFF;
+}
+
+/* Style entire gallery */
+.gallery {
+	flex-wrap: wrap;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: flex;
+}
+/* Stop text from changing when clicked on */
+.galleryOverlay a {
+	text-decoration: none;
+}
+
+/* Make overlay visible when hovering over image */
+.galleryWrap:hover .galleryOverlay {
+	visibility: visible;
+}
+
+/* Make description visible when hovering over image */
+.galleryWrap:hover .galleryDescription {
+	transform: translateY(0);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .galleryColumn {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .galleryColumn {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/***********************************GALLERY END***********************************/
+
+/***********************************PROJECTS BEGIN***********************************/
+/* Adjust projects page */
+.projects {
+	padding: 3rem;
+}
+
+/* Adjust projects links */
+.projectsLink{
+	list-style-type: circle;
+}
+
+/* Adjust projects links */
+.projectsLink li{
+	display: flex;
+	margin-right: 2rem;
+}
+
+/* Adjust projects links */
+.projectsLink a{
+	color: #c27c93;
+}
+
+/* Style project boxes on Projects page */
+.projectsRow {
+	padding-left: 6rem;
+	padding-right: 6rem;
+	padding-bottom: 3rem;
+	display: flex;
+}
+
+/* Style projects text */
+.projectsRow p {
+	color: #2f2f2f;
+}
+
+/* Style projects header */
+.projectsRow h1 {
+	color: #2f2f2f;
+}
+
+/* Style projects description */
+.description {
+	text-align: left;
+}
+
+/* Make style consistent for each projects box */
+.project-html,
+.project-python,
+.project-other {
+	flex: 50%;
+	text-align: left;
+	max-width: 50%;
+	padding: 0 4px;
+}
+
+/* Style projects image */
+.project-python-image,
+.project-html-image,
+.project-other-image {
+	display: flex;
+	flex: 50%;
+	text-align: left;
+	max-width: 50%;
+}
+
+/* spacing between text and image*/
+.project-python {
+	padding-left: 5rem;
+}
+
+.project-html ul,
+.project-python ul,
+.project-other ul {
+	text-align: center;
+	list-style: none;
+	padding-left: 0;
+	text-decoration: none;
+}
+
+/* spacing between text and image*/
+.project-html {
+	padding-right: 5rem;
+}
+
+/* spacing between text and image*/
+.project-other {
+	padding-left: 5rem;
+}
+
+.imagePython,
+.imageHTML,
+.imageOther {
+	margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+/***********************************PROJECTS END***********************************/
+
+/***********************************SKILLS BEGIN***********************************/
+/* Style text for skills */
+.textSplunk,
+.textPython,
+.textLinux,
+.textHTML,
+.textMSOffice,
+.textSQL {
+	text-align: center;
+}
+
+/* Style container for skills */
+.skillsContainer1,
+.skillsContainer2 {
+	display: flex;
+	justify-content: center;
+}
+
+/* Add space to bottom of page */
+.skillsContainer2 {
+	padding-bottom: 8rem;
+}
+
+/* Style information in each skill */
+.mySkills {
+	display: inline;
+	min-height: calc(100vh - 40rem);
+}
+
+/* Adjust container for each skill */
+.mySkills-splunk,
+.mySkills-python,
+.mySkills-linux,
+.mySkills-html,
+.mySkills-msoffice,
+.mySkills-sql {
+	width:35%;
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
+
+/* add border between skills */
+.mySkills-splunk,
+.mySkills-python,
+.mySkills-linux {
+	border-bottom: 1px solid black;
+	margin: 2rem;
+	padding-bottom: 4rem;
+}
+/***********************************SKILLS END***********************************/
+
+/***********************************CONTACT START***********************************/
+
+/***********************************CONTACT END***********************************/
+/* Style for Mobile Phones */
+@media only screen and (max-width: 800px){
+	/** HEADER **/
+	.banner {
+		background-image: none;
+		background-position: center;
+		background-color: #c27c93;
+		justify-content: center;
+		height: 14rem;
+		background-position: 100% 55%;
+		width: 100%;
+		justify-content: space-between;
+		background-size: none;	
+	}
+	.bannerTitle {
+		display: none;
+	}
+	.pageTitle {
+		font-size: 3rem;
+	}
+	.bannerNav {
+		text-decoration: none;
+	}
+	.bannerNav a{
+		font-size: 1rem;
+		text-decoration: none;
+		margin: 0;
+		padding-top: 1.4rem;
+		padding-bottom: 1.4rem;
+	}
+	.bannerNav a:hover{
+		background-color: #DDFAFD;
+		color: black;	
+	}
+	.bannerNav ul {
+		background-color: #c27c93;
+		margin:0;
+		padding:0;
+		position: absolute;
+		width:100%;
+	}
+	.bannerNav ul li {
+		width:10%;
+	}
+	.bannerSocial {
+		display: none;
+	}
+	.bannerSocial ul li{
+		display: none;	
+	}
+	.socialMediaHeader {
+		display: none;
+	}
+	.socialMediaHeader a {
+		display: none;
+	}
+	.bannerNav a:hover {
+		opacity: 0.7;
+	}
+	.index,
+	.blog,
+	.Projects,
+	.skills,
+	.gallery,
+	.contact {
+		margin: auto;
+		width: auto;
+		padding: 0;
+	}
+	.project-html,
+	.project-python,
+	.project-other {
+		flex: 50%;
+		text-align: left;
+		max-width: 50%;
+		padding: 0 4px;
+	}
+
+	/* Style projects image */
+	.project-python-image,
+	.project-html-image,
+	.project-other-image {
+		display: flex;
+		flex: 50%;
+		text-align: left;
+		max-width: 50%;
+	}
+	/** FOOTER **/
+	footer {
+		padding: 0;
+	}
+	footer a {
+		display: block;
+		font-size: 1.5rem;
+	}
+	footer a:hover {
+		background-color: #DDFAFD;
+		color: black;
+	}
+	.siteLink {
+   	display: none;
+	}
+	.fa {
+   	display: none;
+	}
+	.socialMediaFooter {
+		display: none;
+	}
+
+	/** INTRO PAGE **/
+	.interestsContainer1,
+	.interestsContainer2{
+		width: 100%;
+		font-size: 1rem;
+		display: inline;
+		text-align: center;
+	}
+	.interestsIcon {
+		width: 2rem;
+		height: 2rem;
+	}
+	.film {
+		margin: auto;
+		width: 50%;
+		padding-left: 0;
+	}
+	.music {
+		margin: auto;
+		width: 50%;
+		padding-left: 0;
+	}
+	.travel {
+		margin: auto;
+		width: 50%;
+		padding-left: 0;
+	}
+	.programming {
+		margin: auto;
+		width: 50%;
+		padding-left: 0;
+	}
+	.intro {
+		margin-right: 5rem;
+		margin: 0 auto;
+		width: 85%;
+		text-align: center;
+		font-size: 1.05rem;
+	}
+	.interests {
+		width: 100%;
+		display: inline;
+		margin: 0 auto;
+		text-align: center;
+		justify-content: center;
+	}
+	.interestsContainer1,
+	.interestsContainer2 {
+		display: inline;
+		justify-content: center;
+	}
+	.cybersecurity,
+	.travel,
+	.photography,
+	.music,
+	.film,
+	.fitness {
+		display: inline;
+		width: 100%;
+	}
+	.imageCyber,
+	.imagePhoto,
+	.imageTravel,
+	.imageMusic,
+	.imageFilm,
+	.imageFitness {
+		padding-top: 2rem;
+		width: auto;
+	}
+	.textCyber,
+	.textPhoto,
+	.textTravel,
+	.textMusic,
+	.textFilm,
+	.textFitness {
+		padding: 1rem;
+		text-align: center;
+		font-size: 1.05rem;
+	}
+	.interestsIcon {
+		width: 6rem;
+		height: 6rem;
+	}
+
+	/** BLOG PAGE **/
+	.blogImage-1 {
+		display: inline;
+		width: 100%;
+		height: auto;
+	}
+	.card {
+		background-color: #FFFFFF;
+		padding: 0;
+		margin-top: 2px;
+		margin-left: 2rem;
+		margin-right: 2rem;
+		border-top: 2px solid grey;
+		padding-bottom: 2rem;
+		border-bottom: 2px solid grey;
+	}
+	/** PROJECTS PAGE **/
+	.projects {
+		width: 100%;
+		padding: 0;
+		justify-content: center;
+		display: inline-block;
+	}
+	.projects ul {
+		width: 100%;
+		padding-left: 1rem;
+	}
+	.projectsLink li{
+		float: left;
+		width: 100%;
+		color:#c27c93;
+		text-decoration: none;
+		padding-bottom: 1rem;
+		margin-right: 0;
+	}
+	.projectsLink a{
+		color: #c27c93;
+		width: 100%;
+		text-decoration: none;
+	}
+
+	.projectsRow {
+		width: 100%;
+		display: inline;
+	}
+	.description {
+		width: 100%;
+	}
+	.project-html,
+	.project-python,
+	.project-other {
+		font-size: 1rem;
+		padding: 0;
+		display: inline;
+	}
+	.project-html h1,
+	.project-python h1,
+	.project-other h1 {
+		text-align: center;
+		font-size: 2.3rem;
+	}
+	.project-html ul,
+	.project-python ul,
+	.project-other ul {
+		text-align: center;
+		list-style: none;
+		padding-left: 0;
+		text-decoration: none;
+	}
+	.project-html p,
+	.project-python p,
+	.project-other p {
+		text-align: center;
+		text-decoration: none;
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+	}
+	.project-python-image,
+	.project-html-image,
+	.project-other-image {
+		display: none;
+	}
+	.imagePython,
+	.imageHTML,
+	.imageOther {
+		display: none;
+	}
+
+		/** SKILLS PAGE **/
+	.textSplunk,
+	.textPython,
+	.textLinux,
+	.textHTML,
+	.textMSOffice,
+	.textSQL {
+		display: inline;
+		justify-content: center;
+		align-items: center;
+	}
+	.mySkills-splunk h1,
+	.mySkills-python h1,
+	.mySkills-linux h1,
+	.mySkills-html h1,
+	.mySkills-msoffice h1,
+	.mySkills-sql h1 {
+		font-size: 2.3rem;
+	}
+	.skillsContainer1,
+	.skillsContainer2 {
+		display: inline;
+	}
+	.mySkills {
+		display: inline;
+		width: 100%;
+	}
+	.mySkills-splunk,
+	.mySkills-python,
+	.mySkills-linux,
+	.mySkills-html,
+	.mySkills-msoffice,
+	.mySkills-sql {
+		width: 100%;
+		display: inline;
+	}
+	.mySkills-splunk,
+	.mySkills-python,
+	.mySkills-linux,
+	.mySkills-msoffice,
+	.mySkills-html {
+		width: 100%;
+		border-bottom: 0;
+	}
+
+	/** CONTACT PAGE**/
+	.content .socialMedia a{
+		display: inline-block;
+	}
+	.content .socialMedia .fa-linkedin,
+	.content .socialMedia .fa-github,
+	.content .socialMedia .fa-twitter,
+	.content .socialMedia .fa-instagram{
+		border-radius: 10%;
+		width: 2rem;
+	}
+	.content {
+		min-height: calc(100vh - 39rem);
+	}
+}

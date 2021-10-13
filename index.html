@@ -1,71 +1,63 @@
 <!DOCTYPE html>
-<!-- WORK IN PROGRESS -->
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="My first website">
-	<meta name="keywords" content="fraser dumayne, personal website">
+	<meta name="keywords" content="fraser dumayne, personal website, cyber security">
 	<meta name="author" content="Fraser Dumayne">
 
 	<title>Home</title>
 
-	<!-- Favicons -->
-	<link rel="shortcut icon" href="./images/favicons/favicon.ico">
-	<link rel="icon" sizes="16x16 32x32 64x64" href="./images/favicons/favicon.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="./images/favicons/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="160x160" href="./images/favicons/favicon-160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="./images/favicons/favicon-96.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="./images/favicons/favicon-64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16.png">
-	<link rel="apple-touch-icon" href="./images/favicons/favicon-57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="./images/favicons/favicon-114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="./images/favicons/favicon-72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="./images/favicons/favicon-144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="./images/favicons/favicon-60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="./images/favicons/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="./images/favicons/favicon-76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="./images/favicons/favicon-152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/favicon-180.png">
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="./images/favicons/favicon-144.png">
-	<meta name="msapplication-config" content="./images/favicons/browserconfig.xml">
+	<!-- Custom fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="./images/favicons/fav-transparent.png">
 
 	<!-- Social Media Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- CSS Style Sheet -->
-	<link type="text/css" rel="stylesheet" href="./css/stylesheet.css">
+	<link type="text/css" rel="stylesheet" href="./css/stylesheets.css">
+
 </head>
 
-<body>
+<body id="index">
 	<header>
 		<div class="banner">
-			<a class="homepage" href="home.html">
-				<h1 id="bannerTitle">Fraser Dumayne</h1> <!-- Webpage title -->
-			</a>
-		</div>
-		<div class="topNav-background"> <!-- User Navigation Toolbar for quickly moving around the site -->
-			<div class="topNav-navigation">
+			<div class="bannerTitle">
+				<h1>Fraser Dumayne</h1> <!-- Webpage title -->
+			</div>
+			<div class="bannerNav">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="skills.html">Skills</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li class="index"><a href="index.html">Home</a></li>
+					<li class="blog"><a href="blog.html">Blog</a></li>
+					<li class="gallery"><a href="gallery.html">Gallery</a></li>
+					<li class="Projects"><a href="projects.html">Projects</a></li>
+					<li class="skills"><a href="skills.html">Skills</a></li>
+					<li class="contact"><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
-		</div>
-	</header>
+			<div class="bannerSocial">
+				<ul>
+					<div class="socialMediaHeader">
+						<a href="https://github.com/frazzyd" class="fa fa-github"></a>
+						<a href="https://www.linkedin.com/in/fraserdumayne/" class="fa fa-linkedin"></a>
+						<a href="https://twitter.com/frazsec1" class="fa fa-twitter"></a>
+						<a href="https://www.instagram.com/fraser.dumayne/" class="fa fa-instagram"></a>
+					</div>
+				</ul>
+			</div>
+	</div>
+</header>
 
 	<div class="content">
-		<h1 id="pageTitle">Welcome to my website!</h1> <!-- Intro to the website and myself -->
+		<img src="./images/homepage/melb-profile.jpg" id="profile">
+		<h1 class="pageTitle">About Me</h1> <!-- Intro to the website and myself -->
 		<div class="intro">
-			<p>Hi! My name is Fraser Dumayne and this is my very own website which is the result of me teaching myself HTML/CSS over the course of a couple of weeks. It is still a work in progress as I continue to learn new techniques in HTML/CSS and JavaScript.</p>
-			<p>I am currently studying Cyber Security & Forensics (4th Year) at Edinburgh Napier University.</p>
-			<img src="./images/homepage/melb-profile.jpg" id="profile">
+			<p>Hi! My name is Fraser Dumayne and this is my very own website which is the result of me teaching myself HTML/CSS over the course of a couple of weeks. It is still a work in progress as I continue to learn new techniques in HTML/CSS.</p>
+			<p>I recently graduated from Edinburgh Napier University with a first degree in Cyber Security & Forensics and am now working in the cyber security industry.</p>
 		</div>
 		<div class="interests"> <!-- Description of some of my interests -->
 			<div class="interestsContainer1">
@@ -75,7 +67,7 @@
 					</div>
 					<h1>Cyber Security</h1>
 					<div class="textCyber">
-						<p>I'm currently studying Cyber Security at Napier University and hope to begin working in the cyber security field afterwards. I'm always trying to learn new software, and currently plan on attending more CTF events.</p>
+						<p>Since I was very young I’ve been interested in computers. This interest lead me to pursue a career in cyber security, officially starting with my studies at Edinburgh Napier University (BEng Cyber Security & Forensics) which gave me the ability to land a role as a Security Engineer. In the future I hope to achieve a role in penetration testing as this field significantly interests me. I am however also interested in purple teaming and big data.</p>
 					</div>
 				</div>
 				<div class="travel">
@@ -84,7 +76,7 @@
 				</div>
 					<h1>Travel</h1>
 					<div class="textTravel">
-						<p>I love travelling and I'm always on the lookout for new places to visit! Most recently I visited China for some work experience, and also Australia for a semester abroad.</p>
+						<p>Since having more freedom (and an income) as an adult, I have loved to spend that time travelling and exploring new cultures. I’m always on the lookout for my next adventure! I feel like travel is one of the best ways to spend your time as you get to experience new cultures and gain valuable memories. Some of my favourite trips were visiting China for a university funded trip and also studying in Melbourne as part of a semester abroad.</p>
 					</div>
 				</div>
 				<div class="photography">
@@ -93,7 +85,7 @@
 					</div>
 					<h1>Photography</h1>
 					<div class="textPhoto">
-						<p>Photography is something that I have always enjoyed on a basic level but is something that I'm attempting to gain more insight into.</p>
+						<p>Photography is something that I have always enjoyed on a basic level but is something that I'm attempting to gain more insight into. You can see some of my favourite pictures in my gallery. This hobby accompanies my interest in travel as I can take pictures in exotic locations when I’m on the move.</p>
 					</div>
 				</div>
 			</div>
@@ -104,7 +96,7 @@
 					</div>
 					<h1>Music</h1>
 					<div class="textMusic">
-						<p>Music seems to accompany almost everything I do (or even a podcast), and going to gigs is one of my favourite experiences.</p>
+						<p>Hardly an interesting hobby (I mean who doesn’t like music) but something that I am passionate about as it accompanies most of my activities. I love going to gigs (particularly Rock or Punk shows) and I try to travel abroad to discover a new music festival when I can.</p>
 					</div>
 				</div>
 				<div class="film">
@@ -113,16 +105,17 @@
 				</div>
 					<h1>Film</h1>
 					<div class="textFilm">
-						<p>Films have always been a part of my life and over time I became more interested in them. I keep track of most of my film watching on <a href="https://letterboxd.com/FraserDumayne/">Letterboxd</a>.</p>
+						<p>Since being in high school and having a lot of film loving friends, I developed a great interest in films. Going to the cinema is such a great experience and a way to take my mind off of life for a few moments. I keep track of most of my film watching on <a style="color:#c27c93" href="https://letterboxd.com/FraserDumayne/">Letterboxd</a> if you fancy seeing what I’ve been watching.</p>
 					</div>
 				</div>
 				<div class="fitness">
 					<div class="imageFitness">
 						<img class="interestsIcon" src="./images/homepage/dumbbell.png"/>
 					</div>
-					<h1>Fitness</h1>
+					<h1>Sports & Fitness</h1>
 					<div class="textFitness">
-						<p>Another recent hobby of mine is fitness. I try to go to the gym as often as possible with the goal of becoming stronger (like Thor but not quite). I also enjoy Bouldering which I try to do as often as I can.</p>
+						<p>More recently (perhaps due to sitting down all day at university and work) is going to the gym. I really enjoy building fitness programmes for myself and seeing the changes physically. Maybe one day I’ll look like Chris Hemsworth…
+							I also recently got into bouldering/climbing which I hope to get into much more in the future.</p>
 					</div>
 				</div>
 			</div>
@@ -130,19 +123,19 @@
 	</div>
 
 	<footer> <!-- User Navigation Toolbar for quickly moving around the site -->
-		<a href="index.html">Home</a>
-		<a href="blog.html">Blog</a>
-		<a href="gallery.html">Gallery</a>
-		<a href="projects.html">Projects</a>
-		<a href="skills.html">Skills</a>
-		<a href="contact.html">Contact</a>
+		<a class='footerLink' href="index.html">Home</a>
+		<a class='footerLink' href="blog.html">Blog</a>
+		<a class='footerLink' href="gallery.html">Gallery</a>
+		<a class='footerLink' href="projects.html">Projects</a>
+		<a class='footerLink' href="skills.html">Skills</a>
+		<a class='footerLink' href="contact.html">Contact</a>
 		<div class="socialMediaFooter">
-			<a href="https://www.facebook.com/profile.php?id=100010232985985" class="fa fa-facebook"></a>
-			<a href="https://www.linkedin.com/in/fraserdumayne/" class="fa fa-linkedin"></a>
-			<a href="https://twitter.com/frazsec1" class="fa fa-twitter"></a>
-			<a href="https://www.instagram.com/fraser.dumayne/" class="fa fa-instagram"></a>
+			<a href="https://github.com/frazzyd"><i class="fa fa-github fa-lg"></i></a>
+			<a href="https://www.linkedin.com/in/fraserdumayne/"><i class="fa fa-linkedin fa-lg"></i></a>
+			<a href="https://twitter.com/frazsec1"><i class="fa fa-twitter fa-lg"></i></a>
+			<a href="https://www.instagram.com/fraser.dumayne/"><i class="fa fa-instagram fa-lg"></i></a>
 		</div>
-		<p class="siteLink"> www.fraserdumayne.co.uk </p>
+		<p class="siteLink">Fraser Dumayne</p>
 	</footer>
 </body>
 

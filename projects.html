@@ -1,62 +1,53 @@
 <!DOCTYPE html>
-<!-- WORK IN PROGRESS -->
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="My first website">
-	<meta name="keywords" content="fraser dumayne, personal website">
+	<meta name="keywords" content="fraser dumayne, personal website, cyber security">
 	<meta name="author" content="Fraser Dumayne">
 
-	<title>Home</title>
+	<title>Projects</title>
 
-	<!-- Favicons -->
-	<link rel="shortcut icon" href="./images/favicons/favicon.ico">
-	<link rel="icon" sizes="16x16 32x32 64x64" href="./images/favicons/favicon.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="./images/favicons/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="160x160" href="./images/favicons/favicon-160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="./images/favicons/favicon-96.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="./images/favicons/favicon-64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16.png">
-	<link rel="apple-touch-icon" href="./images/favicons/favicon-57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="./images/favicons/favicon-114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="./images/favicons/favicon-72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="./images/favicons/favicon-144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="./images/favicons/favicon-60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="./images/favicons/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="./images/favicons/favicon-76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="./images/favicons/favicon-152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/favicon-180.png">
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="./images/favicons/favicon-144.png">
-	<meta name="msapplication-config" content="./images/favicons/browserconfig.xml">
+	<!-- Custom fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="./images/favicons/fav-transparent.png">
 
 	<!-- Social Media Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- CSS Style Sheet -->
-	<link type="text/css" rel="stylesheet" href="./css/stylesheet.css">
+	<link type="text/css" rel="stylesheet" href="./css/stylesheets.css">
 </head>
 
-<body>
+<body id="projects">
 	<header>
 		<div class="banner">
-			<a class="homepage" href="home.html">
-				<h1 id="bannerTitle">Fraser Dumayne</h1> <!-- Webpage title -->
-			</a>
-		</div>
-		<div class="topNav-background"> <!-- User Navigation Toolbar for quickly moving around the site -->
-			<div class="topNav-navigation">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="skills.html">Skills</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
+				<div class="bannerTitle">
+					<h1>Fraser Dumayne</h1> <!-- Webpage title -->
+				</div>
+				<div class="bannerNav">
+					<ul>
+						<li class="index"><a href="index.html">Home</a></li>
+						<li class="blog"><a href="blog.html">Blog</a></li>
+						<li class="gallery"><a href="gallery.html">Gallery</a></li>
+						<li class="Projects"><a href="projects.html">Projects</a></li>
+						<li class="skills"><a href="skills.html">Skills</a></li>
+						<li class="contact"><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="bannerSocial">
+					<ul>
+						<div class="socialMediaHeader">
+							<a href="https://github.com/frazzyd" class="fa fa-github"></a>
+							<a href="https://www.linkedin.com/in/fraserdumayne/" class="fa fa-linkedin"></a>
+							<a href="https://twitter.com/frazsec1" class="fa fa-twitter"></a>
+							<a href="https://www.instagram.com/fraser.dumayne/" class="fa fa-instagram"></a>
+						</div>
+					</ul>
+				</div>
 		</div>
 	</header>
 
@@ -64,9 +55,13 @@
 		<h1 class="pageTitle">Projects</h1> <!-- Projects completed in different Software -->
 		<div class="projects">
 			<div class='projectsRow'>
+				<div class='project-python-image'>
+					<img src="./images/projects/Python.PNG" class="imagePython" >
+				</div>
 				<div class='project-python'>
 					<h1>Python</h1>
 					<p class='description'>
+						<p>One of my favourite things to do is come up with a new script in Python, I have selected some of my personal projects and put them up on Github for your viewing!</p>
 						<ul class='projectsLink'>
 							<li><a href="./projects/webpage_search.py">Webpage Search</a></li>
 							<li><a href="./projects/random_password.py">Password Generator</a></li>
@@ -75,37 +70,29 @@
 						</ul>
 					</p>
 				</div>
-
+			</div>
+			<div class='projectsRow'>
 				<div class='project-html'>
 					<h1>HTML &amp; CSS</h1>
 					<p class='description'>
+						<p>Before upgrading to Squarespace I created my own site using HTML/CSS all from scratch. I decided to move to Squarespace as it made updating the website much easier, giving me much more time to spend on other projects.</p>
 						<ul class='projectsLink'>
-							<li><a href="http://www.fraserdumayne.co.uk">fraserdumayne.co.uk</a></li>
+							<li><a href="https://github.com/frazzyd/My-Website">Github Link</a></li>
 						</ul>
 					</p>
 				</div>
-
-				<div class='project-js'>
-					<h1>JavaScript</h1>
-					<p class='description'>
-						<ul class='projectsLink'>
-							<li>Coming soon</li>
-						</ul>
-					</p>
+				<div class='project-html-image'>
+					<img src="./images/projects/HTML.PNG" class="imageHTML">
 				</div>
 			</div>
 			<div class='projectsRow'>
-				<div class='project-java'>
-					<h1>Java</h1>
-					<p class='description'>
-						<ul class='projectsLink'>
-							<li><a href="./projects/caesarcipher.java">Caesar Cipher</a></li>
-						</ul>
-					</p>
+				<div class='project-other-image'>
+					<img src="./images/projects/Other.PNG" class="imageOther" >
 				</div>
-				<div class='project-msoffice'>
-					<h1>Microsoft Office</h1>
+				<div class='project-other'>
+					<h1>Other</h1>
 					<p class='description'>
+						<p>Over the years at school, university, and my career, I have developed various things that I am proud of and these are shown here! I really enjoy designing things so a proud moment of mine was winning first prize for my dissertation poster as seen on the left.</p>
 						<ul class='projectsLink'>
 							<li><a href="./projects/dissertation.pdf">Evaluating IoT Device Security</a></li>
 							<li><a href="./projects/poster.pdf">Evaluating IoT Device Security Poster</a></li>
@@ -117,19 +104,19 @@
 	</div>
 
 	<footer> <!-- User Navigation Toolbar for quickly moving around the site -->
-		<a href="index.html">Home</a>
-		<a href="blog.html">Blog</a>
-		<a href="gallery.html">Gallery</a>
-		<a href="projects.html">Projects</a>
-		<a href="skills.html">Skills</a>
-		<a href="contact.html">Contact</a>
+		<a class='footerLink' href="index.html">Home</a>
+		<a class='footerLink' href="blog.html">Blog</a>
+		<a class='footerLink' href="gallery.html">Gallery</a>
+		<a class='footerLink' href="projects.html">Projects</a>
+		<a class='footerLink' href="skills.html">Skills</a>
+		<a class='footerLink' href="contact.html">Contact</a>
 		<div class="socialMediaFooter">
-			<a href="https://www.facebook.com/profile.php?id=100010232985985" class="fa fa-facebook"></a>
-			<a href="https://www.linkedin.com/in/fraserdumayne/" class="fa fa-linkedin"></a>
-			<a href="https://twitter.com/frazsec1" class="fa fa-twitter"></a>
-			<a href="https://www.instagram.com/fraser.dumayne/" class="fa fa-instagram"></a>
+			<a href="https://github.com/frazzyd"><i class="fa fa-github fa-lg"></i></a>
+			<a href="https://www.linkedin.com/in/fraserdumayne/"><i class="fa fa-linkedin fa-lg"></i></a>
+			<a href="https://twitter.com/frazsec1"><i class="fa fa-twitter fa-lg"></i></a>
+			<a href="https://www.instagram.com/fraser.dumayne/"><i class="fa fa-instagram fa-lg"></i></a>
 		</div>
-		<p class="siteLink"> www.fraserdumayne.co.uk </p>
+		<p class="siteLink">Fraser Dumayne</p>
 	</footer>
 </body>
 
