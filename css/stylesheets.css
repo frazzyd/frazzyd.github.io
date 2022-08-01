@@ -1,11 +1,7 @@
 /* Set basic style which is consistent across all pages */
 body {
 	background-color: white;
-<<<<<<< Updated upstream
-	font-family: 'Open Sans', sans-serif;
-=======
 	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
->>>>>>> Stashed changes
 	padding: 0;
 	margin: 0 auto;
 	color: #2f2f2f;
@@ -13,19 +9,6 @@ body {
 	line-height: 1.9rem;	
 }
 
-<<<<<<< Updated upstream
-/* Banner */
-.banner {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/banners/banner.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-    background-size: cover;	
-	flex: 1;
-	display: flex;
-	justify-content: center;
-	height: 23rem;
-	background-position: 100% 25%;
-=======
 body {
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
@@ -174,7 +157,6 @@ body {
 	display: flex;
 	justify-content: center;
 	height: 9rem;
->>>>>>> Stashed changes
 	width: 100%;
 }
 
@@ -189,13 +171,8 @@ body {
 
 /* Title on Banner */
 .bannerTitle h1{
-<<<<<<< Updated upstream
-	color: white;
-	font-size: 2rem;
-=======
 	color: black;
 	font-size: 1.5rem;
->>>>>>> Stashed changes
 	width: auto;
 }
 
@@ -204,12 +181,8 @@ body {
 	justify-content: center;
 	width: auto;
 	padding-left: 4rem;
-<<<<<<< Updated upstream
-	margin-top: 0.6rem;
-=======
 	padding-top: 1rem;
 	margin-top: 1rem;
->>>>>>> Stashed changes
 }
 
 /* Banner navigation links */
@@ -220,12 +193,8 @@ body {
 }
 
 .bannerNav ul {
-<<<<<<< Updated upstream
-	padding: 0.2rem;
-=======
 	padding: 0.1rem;
 	padding-top: 1rem;
->>>>>>> Stashed changes
 	display: flex;
 	justify-content: center;
 }
@@ -235,12 +204,6 @@ body {
 	display: inline;
 }
 
-<<<<<<< Updated upstream
-.bannerNav a {
-	display: flex;
-	justify-content: center;
-	font-size: 1.21rem;
-=======
 .bannerNav ul li a {
 	color: black;
 }
@@ -248,16 +211,11 @@ body {
 	display: flex;
 	justify-content: center;
 	font-size: 1.5rem;
->>>>>>> Stashed changes
 	padding: 1.32rem;
 }
 
 .bannerSocial {
-<<<<<<< Updated upstream
-	font-size: 1.5rem;
-=======
 	font-size: 2rem;
->>>>>>> Stashed changes
 	width: 16rem;
 	text-decoration: none;
 	padding-right: 3rem;
@@ -265,15 +223,9 @@ body {
 
 /* Banner social links */
 .bannerSocial ul li{
-<<<<<<< Updated upstream
-		display: flex;
-		justify-content: center;
-		text-decoration: none;
-=======
 	display: flex;
 	justify-content: center;
 	text-decoration: none;
->>>>>>> Stashed changes
 }
 
 /* Block containing social media links on footer */
@@ -285,17 +237,10 @@ body {
 
 /* Style header social links */
 .socialMediaHeader a {
-<<<<<<< Updated upstream
-	width: 1.1rem;
-	height: 1.1rem;
-	font-size: 1.3rem;
-	color: white;
-=======
 	width: 2rem;
 	height: 2rem;
 	font-size: 1.7rem;
 	color: black;
->>>>>>> Stashed changes
 	background-color: inherit;
 	text-decoration: none;
 	float: right;
@@ -305,11 +250,7 @@ body {
 
 /* Style the links inside the top navigation buttons */
 .bannerNav a {
-<<<<<<< Updated upstream
-	color: #F3F2F2;
-=======
 	color: black;
->>>>>>> Stashed changes
 	text-decoration: none;
 }
 
@@ -320,39 +261,6 @@ body {
 
 /* Define what happens to nav bar when you are on specific page */
 #index .bannerNav .index,
-<<<<<<< Updated upstream
-#blog .bannerNav .blog,
-#gallery .bannerNav .gallery,
-#projects .bannerNav .Projects,
-#skills .bannerNav .skills,
-#contact .bannerNav .contact {
-  font-weight: bold;
-}
-
-/* Basic text contents of each page */
-.content {
-	text-align: center;
-	min-height: calc(100vh - 15rem);
-}
-
-/* Style the sub title of each page */
-.pageTitle {
-	padding-top:1rem;
-	padding-bottom: 1rem;
-	font-size: 2.5rem;
-	color: #2e2e2e;
-}
-
-/* Style profile picture */
-#profile {
-	width: 14rem;
-	height: 14rem;
-	border-radius: 20%;
-	margin-top:-7rem;
-	border:0.8rem solid white;
-}
-
-=======
 #gallery .bannerNav .gallery,
 #shops .bannerNav .shop,
 #contact .bannerNav .contact {
@@ -371,7 +279,6 @@ body {
 
 
 /***********************************FOOTER START***********************************/
->>>>>>> Stashed changes
 /* Style all font awesome icons*/
 .fa {
 	padding: 1.05rem;
@@ -384,27 +291,12 @@ body {
 	opacity: 0.7;
 }
 
-<<<<<<< Updated upstream
-.fa-github {
-	background: #3B5998;
-	color: white;
-	width: auto;
-	height: auto;
-	border-radius: 80%
-}
-
-=======
->>>>>>> Stashed changes
 .fa-instagram {
 	background: #ffb3d9;
 	color: white;
 	width: auto;
 	height: auto;
-<<<<<<< Updated upstream
-	border-radius:80%;
-=======
 	border-radius:10%;
->>>>>>> Stashed changes
 }
 
 .fa-twitter {
@@ -412,11 +304,7 @@ body {
 	color: white;
 	width: auto;
 	height: auto;
-<<<<<<< Updated upstream
-	border-radius:80%;
-=======
 	border-radius:10%;
->>>>>>> Stashed changes
 }
 
 .fa-linkedin {
@@ -424,17 +312,6 @@ body {
 	color: white;
 	width: auto;
 	height: auto;
-<<<<<<< Updated upstream
-	border-radius:80%;
-}
-
-
-/* Set the background for the bottom navigation bar */
-footer {
-	margin-top: 1rem;
-	background-color: #c27c93;
-	padding: 3rem;
-=======
 	border-radius:10%;
 }
 
@@ -443,16 +320,11 @@ footer {
 	margin-top: 1rem;
 	padding: 3rem;
 	padding-bottom: 1rem;
->>>>>>> Stashed changes
 }
 
 /* Style the links inside the bottom navigation bar */
 footer a {
-<<<<<<< Updated upstream
-	color: #F3F2F2; /* Colour of text */
-=======
 	color: black; /* Colour of text */
->>>>>>> Stashed changes
 	text-align: center;
 	padding: 1rem 1rem; /* Size of each block */
 	text-decoration: none; /* Remove underline on text */
@@ -465,11 +337,7 @@ footer a {
 	font-size: 1.2rem;
 	padding-left: 1rem;
 	padding-top: 1rem;
-<<<<<<< Updated upstream
-	color: white;
-=======
 	color: black;
->>>>>>> Stashed changes
 }
 
 /* Block containing social media links on footer */
@@ -478,15 +346,6 @@ footer a {
 	float: right;
 }
 
-<<<<<<< Updated upstream
-/* When the cursor hovers over each box set the following */
-footer i:hover {
-	background-color: #DDFAFD;
-	color: black;
-	width: auto;
-	height: auto;
-	border-radius: 80%;
-=======
 .footer a:link {
   color: green;
   background-color: transparent;
@@ -498,7 +357,6 @@ footer i:hover {
 	color: black;
 	width: auto;
 	height: auto;
->>>>>>> Stashed changes
 }
 
 /* Style each social media link */
@@ -519,12 +377,6 @@ footer i:hover {
 	text-decoration: none;
 }
 
-<<<<<<< Updated upstream
-.footerLink:hover {
-	background-color: #DDFAFD;
-	color: black;
-}
-=======
 .footer a {
 	color:black;
 }
@@ -538,97 +390,11 @@ footer i:hover {
 
 
 
->>>>>>> Stashed changes
 
 /***********************************HOME BEGIN***********************************/
 /* Introduction to website on Home Page */
 .intro {
 	margin-right: 5rem;
-<<<<<<< Updated upstream
-	margin: 0 auto;
-	width: 85%;
-	text-align: center;
-	font-size: 1.05rem;
-}
-
-/* Style container for hobbies and interests */
-.interests {
-	width: 100%;
-	margin: 0 auto;
-}
-
-/* Style container for hobbies and interests */
-.interestsContainer1,
-.interestsContainer2 {
-	display: flex;
-	justify-content: center;
-	padding: 1rem;
-}
-
-/* Style the icons for each interest */
-.interestsIcon {
-	width: 6rem;
-	height: 6rem;
-}
-
-/* Style container for film interests */
-.cybersecurity,
-.travel,
-.photography,
-.music,
-.film,
-.fitness {
-	display: block;
-	width: 50%;
-	padding-left: 5rem;
-	padding-right: 5rem;
-}
-
-.imageCyber,
-.imagePhoto,
-.imageTravel,
-.imageMusic,
-.imageFilm,
-.imageFitness {
-	padding-top: 2rem;
-}
-
-.textCyber,
-.textPhoto,
-.textTravel,
-.textMusic,
-.textFilm,
-.textFitness {
-	text-align: center;
-	font-size: 1.05rem;
-}
-/***********************************HOME END***********************************/
-
-/***********************************BLOG BEGIN***********************************/
-/* Add a card effect for articles */
-.card {
-   background-color: #FFFFFF;
-   padding: 2rem;
-   margin-top: 20px;
-	 margin-left: 20rem;
-	 margin-right: 20rem;
-	 border-top: 2px solid grey;
-	 padding-bottom: 2rem;
-	 border-bottom: 2px solid grey;
-}
-
-.blogImage-1 {
-	display: inline;
-	height:12rem;
-	width:30rem;
-}
-
-.blogLink {
-	color:#c27c93;
-}
-
-/***********************************BLOG END***********************************/
-=======
 	color: white;
 	padding-top: 20rem;
 	margin: 0 auto;
@@ -682,7 +448,6 @@ a:hover, a:active { text-decoration: none; color:black }
 
 
 
->>>>>>> Stashed changes
 
 /***********************************GALLERY BEGIN***********************************/
 .galleryRow {
@@ -758,10 +523,7 @@ a:hover, a:active { text-decoration: none; color:black }
 /* Make overlay visible when hovering over image */
 .galleryWrap:hover .galleryOverlay {
 	visibility: visible;
-<<<<<<< Updated upstream
-=======
 	  cursor: pointer;
->>>>>>> Stashed changes
 }
 
 /* Make description visible when hovering over image */
@@ -788,16 +550,6 @@ a:hover, a:active { text-decoration: none; color:black }
 }
 /***********************************GALLERY END***********************************/
 
-<<<<<<< Updated upstream
-/***********************************PROJECTS BEGIN***********************************/
-/* Adjust projects page */
-.projects {
-	padding: 3rem;
-}
-
-/* Adjust projects links */
-.projectsLink{
-=======
 
 
 
@@ -818,46 +570,16 @@ a:hover, a:active { text-decoration: none; color:black }
 
 /* Adjust projects links */
 .shopLink{
->>>>>>> Stashed changes
 	list-style-type: circle;
 }
 
 /* Adjust projects links */
-<<<<<<< Updated upstream
-.projectsLink li{
-=======
 .shopLink li{
->>>>>>> Stashed changes
 	display: flex;
 	margin-right: 2rem;
 }
 
 /* Adjust projects links */
-<<<<<<< Updated upstream
-.projectsLink a{
-	color: #c27c93;
-}
-
-/* Style project boxes on Projects page */
-.projectsRow {
-	padding-left: 6rem;
-	padding-right: 6rem;
-	padding-bottom: 3rem;
-	display: flex;
-}
-
-/* Style projects text */
-.projectsRow p {
-	color: #2f2f2f;
-}
-
-/* Style projects header */
-.projectsRow h1 {
-	color: #2f2f2f;
-}
-
-/* Style projects description */
-=======
 .shopLink a{
 	color: #c27c93;
 }
@@ -881,34 +603,20 @@ a:hover, a:active { text-decoration: none; color:black }
 }
 
 /* Style shops description */
->>>>>>> Stashed changes
 .description {
 	text-align: left;
 }
 
-<<<<<<< Updated upstream
-/* Make style consistent for each projects box */
-.project-html,
-.project-python,
-.project-other {
-=======
 /* Make style consistent for each shops box */
 .shop-500px,
 .shop-picfair,
 .shop-other {
->>>>>>> Stashed changes
 	flex: 50%;
 	text-align: left;
 	max-width: 50%;
 	padding: 0 4px;
 }
 
-<<<<<<< Updated upstream
-/* Style projects image */
-.project-python-image,
-.project-html-image,
-.project-other-image {
-=======
 .shop-picfair-image  {
 	display: flex;
 }
@@ -925,23 +633,10 @@ a:hover, a:active { text-decoration: none; color:black }
 
 /* Style shops image */
 .shop-other-image {
->>>>>>> Stashed changes
 	display: flex;
 	flex: 50%;
 	text-align: left;
 	max-width: 50%;
-<<<<<<< Updated upstream
-}
-
-/* spacing between text and image*/
-.project-python {
-	padding-left: 5rem;
-}
-
-.project-html ul,
-.project-python ul,
-.project-other ul {
-=======
 	height: 20rem;
     width: 20rem%;
 }
@@ -954,7 +649,6 @@ a:hover, a:active { text-decoration: none; color:black }
 .shop-500px ul,
 .shop-picfair ul,
 .shop-other ul {
->>>>>>> Stashed changes
 	text-align: center;
 	list-style: none;
 	padding-left: 0;
@@ -962,76 +656,6 @@ a:hover, a:active { text-decoration: none; color:black }
 }
 
 /* spacing between text and image*/
-<<<<<<< Updated upstream
-.project-html {
-	padding-right: 5rem;
-}
-
-/* spacing between text and image*/
-.project-other {
-	padding-left: 5rem;
-}
-
-.imagePython,
-.imageHTML,
-.imageOther {
-	margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-/***********************************PROJECTS END***********************************/
-
-/***********************************SKILLS BEGIN***********************************/
-/* Style text for skills */
-.textSplunk,
-.textPython,
-.textLinux,
-.textHTML,
-.textMSOffice,
-.textSQL {
-	text-align: center;
-}
-
-/* Style container for skills */
-.skillsContainer1,
-.skillsContainer2 {
-	display: flex;
-	justify-content: center;
-}
-
-/* Add space to bottom of page */
-.skillsContainer2 {
-	padding-bottom: 8rem;
-}
-
-/* Style information in each skill */
-.mySkills {
-	display: inline;
-	min-height: calc(100vh - 40rem);
-}
-
-/* Adjust container for each skill */
-.mySkills-splunk,
-.mySkills-python,
-.mySkills-linux,
-.mySkills-html,
-.mySkills-msoffice,
-.mySkills-sql {
-	width:35%;
-	padding-left: 4rem;
-	padding-right: 4rem;
-}
-
-/* add border between skills */
-.mySkills-splunk,
-.mySkills-python,
-.mySkills-linux {
-	border-bottom: 1px solid black;
-	margin: 2rem;
-	padding-bottom: 4rem;
-}
-/***********************************SKILLS END***********************************/
-=======
 .shop-500px {
 	padding-right: 20rem;
 }
@@ -1058,29 +682,21 @@ a:hover, a:active { text-decoration: none; color:black }
 
 
 
->>>>>>> Stashed changes
 
 /***********************************CONTACT START***********************************/
 
 /***********************************CONTACT END***********************************/
-<<<<<<< Updated upstream
-=======
 
 
 
 
 
->>>>>>> Stashed changes
 /* Style for Mobile Phones */
 @media only screen and (max-width: 800px){
 	/** HEADER **/
 	.banner {
 		background-image: none;
 		background-position: center;
-<<<<<<< Updated upstream
-		background-color: #c27c93;
-=======
->>>>>>> Stashed changes
 		justify-content: center;
 		height: 14rem;
 		background-position: 100% 55%;
@@ -1105,17 +721,9 @@ a:hover, a:active { text-decoration: none; color:black }
 		padding-bottom: 1.4rem;
 	}
 	.bannerNav a:hover{
-<<<<<<< Updated upstream
-		background-color: #DDFAFD;
 		color: black;	
 	}
 	.bannerNav ul {
-		background-color: #c27c93;
-=======
-		color: black;	
-	}
-	.bannerNav ul {
->>>>>>> Stashed changes
 		margin:0;
 		padding:0;
 		position: absolute;
@@ -1140,45 +748,26 @@ a:hover, a:active { text-decoration: none; color:black }
 		opacity: 0.7;
 	}
 	.index,
-<<<<<<< Updated upstream
-	.blog,
-	.Projects,
-	.skills,
-=======
 	.shop,
->>>>>>> Stashed changes
 	.gallery,
 	.contact {
 		margin: auto;
 		width: auto;
 		padding: 0;
 	}
-<<<<<<< Updated upstream
-	.project-html,
-	.project-python,
-	.project-other {
-=======
 	.shop-html,
 	.shop-picfair,
 	.shop-other {
->>>>>>> Stashed changes
 		flex: 50%;
 		text-align: left;
 		max-width: 50%;
 		padding: 0 4px;
 	}
 
-<<<<<<< Updated upstream
-	/* Style projects image */
-	.project-python-image,
-	.project-html-image,
-	.project-other-image {
-=======
 	/* Style shops image */
 	.shop-picfair-image,
 	.shop-html-image,
 	.shop-other-image {
->>>>>>> Stashed changes
 		display: flex;
 		flex: 50%;
 		text-align: left;
@@ -1206,236 +795,13 @@ a:hover, a:active { text-decoration: none; color:black }
 		display: none;
 	}
 
-<<<<<<< Updated upstream
-	/** INTRO PAGE **/
-	.interestsContainer1,
-	.interestsContainer2{
-		width: 100%;
-		font-size: 1rem;
-		display: inline;
-		text-align: center;
-	}
-	.interestsIcon {
-		width: 2rem;
-		height: 2rem;
-	}
-	.film {
-		margin: auto;
-		width: 50%;
-		padding-left: 0;
-	}
-	.music {
-		margin: auto;
-		width: 50%;
-		padding-left: 0;
-	}
-	.travel {
-		margin: auto;
-		width: 50%;
-		padding-left: 0;
-	}
-	.programming {
-		margin: auto;
-		width: 50%;
-		padding-left: 0;
-	}
-	.intro {
-		margin-right: 5rem;
-		margin: 0 auto;
-		width: 85%;
-		text-align: center;
-		font-size: 1.05rem;
-	}
-	.interests {
-		width: 100%;
-		display: inline;
-		margin: 0 auto;
-		text-align: center;
-		justify-content: center;
-	}
-	.interestsContainer1,
-	.interestsContainer2 {
-		display: inline;
-		justify-content: center;
-	}
-	.cybersecurity,
-	.travel,
-	.photography,
-	.music,
-	.film,
-	.fitness {
-		display: inline;
-		width: 100%;
-	}
-	.imageCyber,
-	.imagePhoto,
-	.imageTravel,
-	.imageMusic,
-	.imageFilm,
-	.imageFitness {
-		padding-top: 2rem;
-		width: auto;
-	}
-	.textCyber,
-	.textPhoto,
-	.textTravel,
-	.textMusic,
-	.textFilm,
-	.textFitness {
-		padding: 1rem;
-		text-align: center;
-		font-size: 1.05rem;
-	}
-	.interestsIcon {
-		width: 6rem;
-		height: 6rem;
-	}
 
-	/** BLOG PAGE **/
-	.blogImage-1 {
-		display: inline;
-		width: 100%;
-		height: auto;
-	}
-	.card {
-		background-color: #FFFFFF;
-		padding: 0;
-		margin-top: 2px;
-		margin-left: 2rem;
-		margin-right: 2rem;
-		border-top: 2px solid grey;
-		padding-bottom: 2rem;
-		border-bottom: 2px solid grey;
-	}
-	/** PROJECTS PAGE **/
-	.projects {
-		width: 100%;
-		padding: 0;
-		justify-content: center;
-		display: inline-block;
-	}
-	.projects ul {
-		width: 100%;
-		padding-left: 1rem;
-	}
-	.projectsLink li{
-		float: left;
-		width: 100%;
-		color:#c27c93;
-		text-decoration: none;
-		padding-bottom: 1rem;
-		margin-right: 0;
-	}
-	.projectsLink a{
-		color: #c27c93;
-		width: 100%;
-		text-decoration: none;
-	}
-
-	.projectsRow {
-		width: 100%;
-		display: inline;
-	}
-	.description {
-		width: 100%;
-	}
-	.project-html,
-	.project-python,
-	.project-other {
-		font-size: 1rem;
-		padding: 0;
-		display: inline;
-	}
-	.project-html h1,
-	.project-python h1,
-	.project-other h1 {
-		text-align: center;
-		font-size: 2.3rem;
-	}
-	.project-html ul,
-	.project-python ul,
-	.project-other ul {
-		text-align: center;
-		list-style: none;
-		padding-left: 0;
-		text-decoration: none;
-	}
-	.project-html p,
-	.project-python p,
-	.project-other p {
-		text-align: center;
-		text-decoration: none;
-		margin-left: 1.5rem;
-		margin-right: 1.5rem;
-	}
-	.project-python-image,
-	.project-html-image,
-	.project-other-image {
-		display: none;
-	}
-	.imagePython,
-	.imageHTML,
-	.imageOther {
-		display: none;
-	}
-
-		/** SKILLS PAGE **/
-	.textSplunk,
-	.textPython,
-	.textLinux,
-	.textHTML,
-	.textMSOffice,
-	.textSQL {
-		display: inline;
-		justify-content: center;
-		align-items: center;
-	}
-	.mySkills-splunk h1,
-	.mySkills-python h1,
-	.mySkills-linux h1,
-	.mySkills-html h1,
-	.mySkills-msoffice h1,
-	.mySkills-sql h1 {
-		font-size: 2.3rem;
-	}
-	.skillsContainer1,
-	.skillsContainer2 {
-		display: inline;
-	}
-	.mySkills {
-		display: inline;
-		width: 100%;
-	}
-	.mySkills-splunk,
-	.mySkills-python,
-	.mySkills-linux,
-	.mySkills-html,
-	.mySkills-msoffice,
-	.mySkills-sql {
-		width: 100%;
-		display: inline;
-	}
-	.mySkills-splunk,
-	.mySkills-python,
-	.mySkills-linux,
-	.mySkills-msoffice,
-	.mySkills-html {
-		width: 100%;
-		border-bottom: 0;
-	}
-=======
-
->>>>>>> Stashed changes
 
 	/** CONTACT PAGE**/
 	.content .socialMedia a{
 		display: inline-block;
 	}
 	.content .socialMedia .fa-linkedin,
-<<<<<<< Updated upstream
-	.content .socialMedia .fa-github,
-=======
->>>>>>> Stashed changes
 	.content .socialMedia .fa-twitter,
 	.content .socialMedia .fa-instagram{
 		border-radius: 10%;
