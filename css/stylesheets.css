@@ -1,7 +1,11 @@
 /* Set basic style which is consistent across all pages */
 body {
 	background-color: white;
+<<<<<<< Updated upstream
 	font-family: 'Open Sans', sans-serif;
+=======
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+>>>>>>> Stashed changes
 	padding: 0;
 	margin: 0 auto;
 	color: #2f2f2f;
@@ -9,6 +13,7 @@ body {
 	line-height: 1.9rem;	
 }
 
+<<<<<<< Updated upstream
 /* Banner */
 .banner {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/banners/banner.jpg");
@@ -20,6 +25,156 @@ body {
 	justify-content: center;
 	height: 23rem;
 	background-position: 100% 25%;
+=======
+body {
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+}
+
+/* Basic text contents of each page */
+.content {
+	text-align: center;
+	min-height: calc(100vh - 15rem);
+}
+
+/* Style the sub title of each page */
+.pageTitle {
+	padding-top:1rem;
+	padding-bottom: 0rem;
+	font-size: 2.5rem;
+	color: #2e2e2e;
+}
+
+
+/***********************************HOMEPAGE BANNER BEGIN***********************************/
+.bannerHome {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 9rem;
+	width: 100%;
+}
+
+.bannerHome > div {
+    width: 33.33333%;
+}
+@media (max-width: 768px) {
+    .bannerHome > div {
+        width: 100%;
+    }
+}
+
+/* Title on Banner */
+.bannerTitleHome h1{
+	color: white;
+	font-size: 1.5rem;
+	width: auto;
+}
+
+/* Title on Banner */
+.bannerTitleHome {
+	justify-content: center;
+	width: auto;
+	padding-left: 4rem;
+	padding-top: 1rem;
+	margin-top: 1rem;
+}
+
+/* Banner navigation links */
+.bannerNavHome {
+	text-decoration: none;
+	justify-content: center;
+	width: auto;
+}
+
+.bannerNavHome ul {
+	padding: 0.1rem;
+	padding-top: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+/* Style navigation links by row */
+.bannerNavHome ul li {
+	display: inline;
+}
+
+.bannerNavHome ul li a {
+	color: white;
+}
+.bannerNavHome a {
+	display: flex;
+	justify-content: center;
+	font-size: 1.5rem;
+	padding: 1.32rem;
+}
+
+.bannerSocialHome {
+	font-size: 2rem;
+	width: 16rem;
+	text-decoration: none;
+	padding-right: 3rem;
+}
+
+/* Banner social links */
+.bannerSocialHome ul li{
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+}
+
+/* Block containing social media links on footer */
+.socialMediaHeaderHome {
+	text-decoration: none;
+	width: 16rem;
+	float:right;
+}
+
+/* Style header social links */
+.socialMediaHeaderHome a {
+	width: 2rem;
+	height: 2rem;
+	font-size: 1.7rem;
+	color: white;
+	background-color: inherit;
+	text-decoration: none;
+	float: right;
+	margin: 0.2rem;
+	padding: 1.1rem;
+}
+
+/* Style the links inside the top navigation buttons */
+.bannerNavHome a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Hover effect for navigator pages Icons */
+.bannerNavHome a:hover {
+	opacity: 0.7;
+}
+
+/* Define what happens to nav bar when you are on specific page */
+#index .bannerNavHome .index,
+#gallery .bannerNavHome .gallery,
+#shop .bannerNavHome .shop,
+#contact .bannerNavHome .contact {
+  font-weight: bold;
+}
+/***********************************HOMEPAGE BANNER END***********************************/
+
+
+
+
+
+/***********************************GENERAL BANNER BEGIN***********************************/
+.banner {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 9rem;
+>>>>>>> Stashed changes
 	width: 100%;
 }
 
@@ -34,8 +189,13 @@ body {
 
 /* Title on Banner */
 .bannerTitle h1{
+<<<<<<< Updated upstream
 	color: white;
 	font-size: 2rem;
+=======
+	color: black;
+	font-size: 1.5rem;
+>>>>>>> Stashed changes
 	width: auto;
 }
 
@@ -44,7 +204,12 @@ body {
 	justify-content: center;
 	width: auto;
 	padding-left: 4rem;
+<<<<<<< Updated upstream
 	margin-top: 0.6rem;
+=======
+	padding-top: 1rem;
+	margin-top: 1rem;
+>>>>>>> Stashed changes
 }
 
 /* Banner navigation links */
@@ -55,7 +220,12 @@ body {
 }
 
 .bannerNav ul {
+<<<<<<< Updated upstream
 	padding: 0.2rem;
+=======
+	padding: 0.1rem;
+	padding-top: 1rem;
+>>>>>>> Stashed changes
 	display: flex;
 	justify-content: center;
 }
@@ -65,15 +235,29 @@ body {
 	display: inline;
 }
 
+<<<<<<< Updated upstream
 .bannerNav a {
 	display: flex;
 	justify-content: center;
 	font-size: 1.21rem;
+=======
+.bannerNav ul li a {
+	color: black;
+}
+.bannerNav a {
+	display: flex;
+	justify-content: center;
+	font-size: 1.5rem;
+>>>>>>> Stashed changes
 	padding: 1.32rem;
 }
 
 .bannerSocial {
+<<<<<<< Updated upstream
 	font-size: 1.5rem;
+=======
+	font-size: 2rem;
+>>>>>>> Stashed changes
 	width: 16rem;
 	text-decoration: none;
 	padding-right: 3rem;
@@ -81,9 +265,15 @@ body {
 
 /* Banner social links */
 .bannerSocial ul li{
+<<<<<<< Updated upstream
 		display: flex;
 		justify-content: center;
 		text-decoration: none;
+=======
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+>>>>>>> Stashed changes
 }
 
 /* Block containing social media links on footer */
@@ -95,10 +285,17 @@ body {
 
 /* Style header social links */
 .socialMediaHeader a {
+<<<<<<< Updated upstream
 	width: 1.1rem;
 	height: 1.1rem;
 	font-size: 1.3rem;
 	color: white;
+=======
+	width: 2rem;
+	height: 2rem;
+	font-size: 1.7rem;
+	color: black;
+>>>>>>> Stashed changes
 	background-color: inherit;
 	text-decoration: none;
 	float: right;
@@ -108,7 +305,11 @@ body {
 
 /* Style the links inside the top navigation buttons */
 .bannerNav a {
+<<<<<<< Updated upstream
 	color: #F3F2F2;
+=======
+	color: black;
+>>>>>>> Stashed changes
 	text-decoration: none;
 }
 
@@ -119,6 +320,7 @@ body {
 
 /* Define what happens to nav bar when you are on specific page */
 #index .bannerNav .index,
+<<<<<<< Updated upstream
 #blog .bannerNav .blog,
 #gallery .bannerNav .gallery,
 #projects .bannerNav .Projects,
@@ -150,6 +352,26 @@ body {
 	border:0.8rem solid white;
 }
 
+=======
+#gallery .bannerNav .gallery,
+#shops .bannerNav .shop,
+#contact .bannerNav .contact {
+  font-weight: bold;
+}
+/***********************************GENERAL BANNER END***********************************/
+
+
+
+
+
+
+
+
+
+
+
+/***********************************FOOTER START***********************************/
+>>>>>>> Stashed changes
 /* Style all font awesome icons*/
 .fa {
 	padding: 1.05rem;
@@ -162,6 +384,7 @@ body {
 	opacity: 0.7;
 }
 
+<<<<<<< Updated upstream
 .fa-github {
 	background: #3B5998;
 	color: white;
@@ -170,12 +393,18 @@ body {
 	border-radius: 80%
 }
 
+=======
+>>>>>>> Stashed changes
 .fa-instagram {
 	background: #ffb3d9;
 	color: white;
 	width: auto;
 	height: auto;
+<<<<<<< Updated upstream
 	border-radius:80%;
+=======
+	border-radius:10%;
+>>>>>>> Stashed changes
 }
 
 .fa-twitter {
@@ -183,7 +412,11 @@ body {
 	color: white;
 	width: auto;
 	height: auto;
+<<<<<<< Updated upstream
 	border-radius:80%;
+=======
+	border-radius:10%;
+>>>>>>> Stashed changes
 }
 
 .fa-linkedin {
@@ -191,6 +424,7 @@ body {
 	color: white;
 	width: auto;
 	height: auto;
+<<<<<<< Updated upstream
 	border-radius:80%;
 }
 
@@ -200,11 +434,25 @@ footer {
 	margin-top: 1rem;
 	background-color: #c27c93;
 	padding: 3rem;
+=======
+	border-radius:10%;
+}
+
+/* Set the background for the bottom navigation bar */
+footer {
+	margin-top: 1rem;
+	padding: 3rem;
+	padding-bottom: 1rem;
+>>>>>>> Stashed changes
 }
 
 /* Style the links inside the bottom navigation bar */
 footer a {
+<<<<<<< Updated upstream
 	color: #F3F2F2; /* Colour of text */
+=======
+	color: black; /* Colour of text */
+>>>>>>> Stashed changes
 	text-align: center;
 	padding: 1rem 1rem; /* Size of each block */
 	text-decoration: none; /* Remove underline on text */
@@ -217,7 +465,11 @@ footer a {
 	font-size: 1.2rem;
 	padding-left: 1rem;
 	padding-top: 1rem;
+<<<<<<< Updated upstream
 	color: white;
+=======
+	color: black;
+>>>>>>> Stashed changes
 }
 
 /* Block containing social media links on footer */
@@ -226,6 +478,7 @@ footer a {
 	float: right;
 }
 
+<<<<<<< Updated upstream
 /* When the cursor hovers over each box set the following */
 footer i:hover {
 	background-color: #DDFAFD;
@@ -233,6 +486,19 @@ footer i:hover {
 	width: auto;
 	height: auto;
 	border-radius: 80%;
+=======
+.footer a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* When the cursor hovers over each box set the following */
+footer i:hover {
+	color: black;
+	width: auto;
+	height: auto;
+>>>>>>> Stashed changes
 }
 
 /* Style each social media link */
@@ -253,15 +519,32 @@ footer i:hover {
 	text-decoration: none;
 }
 
+<<<<<<< Updated upstream
 .footerLink:hover {
 	background-color: #DDFAFD;
 	color: black;
 }
+=======
+.footer a {
+	color:black;
+}
+
+.footerLink:hover {
+	opacity: 0.7;
+}
+/***********************************FOOTER END***********************************/
+
+
+
+
+
+>>>>>>> Stashed changes
 
 /***********************************HOME BEGIN***********************************/
 /* Introduction to website on Home Page */
 .intro {
 	margin-right: 5rem;
+<<<<<<< Updated upstream
 	margin: 0 auto;
 	width: 85%;
 	text-align: center;
@@ -345,6 +628,61 @@ footer i:hover {
 }
 
 /***********************************BLOG END***********************************/
+=======
+	color: white;
+	padding-top: 20rem;
+	margin: 0 auto;
+	width: 85%;
+	text-align: center;
+	font-size: 1.4rem;
+	height: 50rem;
+}
+
+.content button {
+  border: 0.4rem solid white;
+  background-color: white;
+  color: white;
+  padding: 2rem 2rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  transition-duration: 0.4s;
+}
+
+.content button:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+a:visited { text-decoration: none; color:white; }
+a:hover, a:active { text-decoration: none; color:black }
+
+/***********************************HOME END***********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
 
 /***********************************GALLERY BEGIN***********************************/
 .galleryRow {
@@ -420,6 +758,10 @@ footer i:hover {
 /* Make overlay visible when hovering over image */
 .galleryWrap:hover .galleryOverlay {
 	visibility: visible;
+<<<<<<< Updated upstream
+=======
+	  cursor: pointer;
+>>>>>>> Stashed changes
 }
 
 /* Make description visible when hovering over image */
@@ -446,6 +788,7 @@ footer i:hover {
 }
 /***********************************GALLERY END***********************************/
 
+<<<<<<< Updated upstream
 /***********************************PROJECTS BEGIN***********************************/
 /* Adjust projects page */
 .projects {
@@ -454,16 +797,43 @@ footer i:hover {
 
 /* Adjust projects links */
 .projectsLink{
+=======
+
+
+
+
+
+
+
+
+
+
+/***********************************SHOP BEGIN***********************************/
+/* Adjust projects page */
+.shops {
+	padding: 3rem;
+	padding-left: 15rem;
+	padding-right: 10rem;
+}
+
+/* Adjust projects links */
+.shopLink{
+>>>>>>> Stashed changes
 	list-style-type: circle;
 }
 
 /* Adjust projects links */
+<<<<<<< Updated upstream
 .projectsLink li{
+=======
+.shopLink li{
+>>>>>>> Stashed changes
 	display: flex;
 	margin-right: 2rem;
 }
 
 /* Adjust projects links */
+<<<<<<< Updated upstream
 .projectsLink a{
 	color: #c27c93;
 }
@@ -487,28 +857,80 @@ footer i:hover {
 }
 
 /* Style projects description */
+=======
+.shopLink a{
+	color: #c27c93;
+}
+
+/* Style shop boxes on shops page */
+.shopRow {
+	padding-left: 6rem;
+	padding-right: 6rem;
+	padding-bottom: 12rem;
+	display: flex;
+}
+
+/* Style shops text */
+.shopRow p {
+	color: #2f2f2f;
+}
+
+/* Style shops header */
+.shopRow h1 {
+	color: #2f2f2f;
+}
+
+/* Style shops description */
+>>>>>>> Stashed changes
 .description {
 	text-align: left;
 }
 
+<<<<<<< Updated upstream
 /* Make style consistent for each projects box */
 .project-html,
 .project-python,
 .project-other {
+=======
+/* Make style consistent for each shops box */
+.shop-500px,
+.shop-picfair,
+.shop-other {
+>>>>>>> Stashed changes
 	flex: 50%;
 	text-align: left;
 	max-width: 50%;
 	padding: 0 4px;
 }
 
+<<<<<<< Updated upstream
 /* Style projects image */
 .project-python-image,
 .project-html-image,
 .project-other-image {
+=======
+.shop-picfair-image  {
+	display: flex;
+}
+
+.shop-500px-image  {
+	display: flex;
+	width:20rem;
+	height:20rem;
+	margin: -100px 0 0 -100px;
+	padding-left: 7rem;
+	padding-right: 7rem;
+	border: 1px solid black;
+}
+
+/* Style shops image */
+.shop-other-image {
+>>>>>>> Stashed changes
 	display: flex;
 	flex: 50%;
 	text-align: left;
 	max-width: 50%;
+<<<<<<< Updated upstream
 }
 
 /* spacing between text and image*/
@@ -519,6 +941,20 @@ footer i:hover {
 .project-html ul,
 .project-python ul,
 .project-other ul {
+=======
+	height: 20rem;
+    width: 20rem%;
+}
+
+/* spacing between text and image*/
+.shop-picfair {
+	padding-left: 5rem;
+}
+
+.shop-500px ul,
+.shop-picfair ul,
+.shop-other ul {
+>>>>>>> Stashed changes
 	text-align: center;
 	list-style: none;
 	padding-left: 0;
@@ -526,6 +962,7 @@ footer i:hover {
 }
 
 /* spacing between text and image*/
+<<<<<<< Updated upstream
 .project-html {
 	padding-right: 5rem;
 }
@@ -594,17 +1031,56 @@ footer i:hover {
 	padding-bottom: 4rem;
 }
 /***********************************SKILLS END***********************************/
+=======
+.shop-500px {
+	padding-right: 20rem;
+}
+
+/* spacing between text and image*/
+.shop-other {
+	padding-left: 5rem;
+}
+
+.imagePicfair,
+.image500px,
+.imageOther {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+/***********************************SHOPS END***********************************/
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
 
 /***********************************CONTACT START***********************************/
 
 /***********************************CONTACT END***********************************/
+<<<<<<< Updated upstream
+=======
+
+
+
+
+
+>>>>>>> Stashed changes
 /* Style for Mobile Phones */
 @media only screen and (max-width: 800px){
 	/** HEADER **/
 	.banner {
 		background-image: none;
 		background-position: center;
+<<<<<<< Updated upstream
 		background-color: #c27c93;
+=======
+>>>>>>> Stashed changes
 		justify-content: center;
 		height: 14rem;
 		background-position: 100% 55%;
@@ -629,11 +1105,17 @@ footer i:hover {
 		padding-bottom: 1.4rem;
 	}
 	.bannerNav a:hover{
+<<<<<<< Updated upstream
 		background-color: #DDFAFD;
 		color: black;	
 	}
 	.bannerNav ul {
 		background-color: #c27c93;
+=======
+		color: black;	
+	}
+	.bannerNav ul {
+>>>>>>> Stashed changes
 		margin:0;
 		padding:0;
 		position: absolute;
@@ -658,28 +1140,45 @@ footer i:hover {
 		opacity: 0.7;
 	}
 	.index,
+<<<<<<< Updated upstream
 	.blog,
 	.Projects,
 	.skills,
+=======
+	.shop,
+>>>>>>> Stashed changes
 	.gallery,
 	.contact {
 		margin: auto;
 		width: auto;
 		padding: 0;
 	}
+<<<<<<< Updated upstream
 	.project-html,
 	.project-python,
 	.project-other {
+=======
+	.shop-html,
+	.shop-picfair,
+	.shop-other {
+>>>>>>> Stashed changes
 		flex: 50%;
 		text-align: left;
 		max-width: 50%;
 		padding: 0 4px;
 	}
 
+<<<<<<< Updated upstream
 	/* Style projects image */
 	.project-python-image,
 	.project-html-image,
 	.project-other-image {
+=======
+	/* Style shops image */
+	.shop-picfair-image,
+	.shop-html-image,
+	.shop-other-image {
+>>>>>>> Stashed changes
 		display: flex;
 		flex: 50%;
 		text-align: left;
@@ -707,6 +1206,7 @@ footer i:hover {
 		display: none;
 	}
 
+<<<<<<< Updated upstream
 	/** INTRO PAGE **/
 	.interestsContainer1,
 	.interestsContainer2{
@@ -923,13 +1423,19 @@ footer i:hover {
 		width: 100%;
 		border-bottom: 0;
 	}
+=======
+
+>>>>>>> Stashed changes
 
 	/** CONTACT PAGE**/
 	.content .socialMedia a{
 		display: inline-block;
 	}
 	.content .socialMedia .fa-linkedin,
+<<<<<<< Updated upstream
 	.content .socialMedia .fa-github,
+=======
+>>>>>>> Stashed changes
 	.content .socialMedia .fa-twitter,
 	.content .socialMedia .fa-instagram{
 		border-radius: 10%;
