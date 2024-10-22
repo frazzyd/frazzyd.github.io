@@ -83,12 +83,6 @@ body {
 	color: #525252; /* Darker on hover */
 }
 
-@media (max-width: 768px) {
-    .bannerHome > div {
-        width: 100%;
-    }
-}
-
 /*************** Social Media Buttons ***************/
 .bannerSocial {
 	font-size: 2rem;
@@ -276,24 +270,6 @@ body {
 .galleryImage:hover .galleryDescription {
 	transform: translateY(0);
 }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .galleryColumn {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .galleryColumn {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
 /***********************************GALLERY END***********************************/
 
 
@@ -452,43 +428,78 @@ body {
 /* Style for Mobile Phones */
 @media only screen and (max-width: 800px){
 	/** HEADER **/
+	header {
+		height: 5em;
+		display: flex;
+		flex-direction: column;
+		width: 100%;	
+		padding-bottom: 3.2rem;
+	}
+	body {
+		color: #000000;
+		letter-spacing: 0.05rem;
+		font-family: 'Montserrat', sans-serif;
+		background-color: #fff;
+		margin: 0 auto;	
+		width: 100%;	
+	}
 	.banner {
-		background-image: none;
-		background-position: center;
+		display: flex;
 		justify-content: center;
-		height: 14rem;
-		background-position: 100% 55%;
-		width: 100%;
-		justify-content: space-between;
-		background-size: none;	
 	}
 	.bannerTitle {
-		display: none;
+		margin: 0;
+		position: absolute;
+		top: 0%;
+	}
+	.bannerTitle h1 a {
+		font-size: 1.3rem; /* Larger, bolder font */
+		font-weight: 900;
+		letter-spacing: 6px; /* Slightly increased letter spacing */
+		margin: 0;
+		color: #000;
+		text-decoration: none;
 	}
 	.pageTitle {
 		font-size: 3rem;
 	}
 	.bannerNav {
 		text-decoration: none;
+		margin: 0 auto;
+		display: flex;
+		padding: 0;
+		text-align: 0;
+		position: relative;
+		top: 300%;
 	}
-	.bannerNav a{
-		font-size: 1rem;
+	.bannerNav a {
 		text-decoration: none;
+		width: 100%;
+		padding: 0;
 		margin: 0;
-		padding-top: 1.4rem;
-		padding-bottom: 1.4rem;
 	}
 	.bannerNav a:hover{
 		color: black;	
 	}
 	.bannerNav ul {
-		margin:0;
-		padding:0;
-		position: absolute;
-		width:100%;
+		margin: 0;
+		padding: 0;
+		width: 100%;
 	}
 	.bannerNav ul li {
-		width:10%;
+	} 
+	.bannerNav ul li a {
+		display: inline-block;	
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 1rem;
+		color: #000000;
+		transition: transform 0.5s ease, color 0.5s ease; /* Smooth transition for nav links */
+	}
+	  
+	.bannerNav ul li a:hover {
+		transform: scale(1.1); /* Slightly larger on hover */
+		color: #525252; /* Darker on hover */
 	}
 	.bannerSocial {
 		display: none;
@@ -505,7 +516,12 @@ body {
 	.bannerNav a:hover {
 		opacity: 0.7;
 	}
-	.index,
+	/* Responsive layout - makes a two column-layout instead of four columns */
+	.galleryColumn {
+	  -ms-flex: 50%;
+	  flex: 50%;
+	  max-width: 50%;
+	}
 	.shop,
 	.gallery,
 	.contact {
@@ -513,21 +529,47 @@ body {
 		width: auto;
 		padding: 0;
 	}
-	.shop-html,
-	.shop-picfair {
-		flex: 50%;
-		text-align: left;
-		max-width: 50%;
-		padding: 0 4px;
+	/** SHOP PAGE**/
+	.shops {
+		display: block;
+		padding-top: 2rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
-
-	/* Style shops image */
+	.shopRow {
+		display: inline;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		max-width: 100%;
+	}
+	.shop-500px,
+	.shop-picfair {
+		display: block;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		max-width: 100%;
+	}
+	.shopLink {
+		display: inline-block;
+	}
+	ul.shopLink {
+		padding: 0;
+		margin: 0;
+	}
+	ul.shopLink li {
+		display: list-item;
+		padding: 0;
+		margin: 0;
+	}	
 	.shop-picfair-image,
-	.shop-html-image {
-		display: flex;
-		flex: 50%;
-		text-align: left;
-		max-width: 50%;
+	.shop-500px-image {
+		display: none;
+	}
+	.imagePicfair,
+	.image500px {
+		display: none;
 	}
 	/** CONTACT PAGE**/
 	.content .socialMedia a{
@@ -540,5 +582,23 @@ body {
 	}
 	.content {
 		min-height: calc(100vh - 39rem);
+	}
+	.contact-form {
+		margin-bottom: 50px;
+		background-color: #fff;
+		padding: none;
+		width: 70%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto; 
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.galleryColumn {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
 	}
 }
