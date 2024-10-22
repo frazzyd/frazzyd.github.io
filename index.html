@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="My first website">
-	<meta name="keywords" content="fraser dumayne, personal website, cyber security, photography">
+	<meta name="description" content="Fraser Dumayne Photography">
+	<meta name="keywords" content="fraser dumayne, personal website, cyber security, photography, landscapes, street photography, travel">
 	<meta name="author" content="Fraser Dumayne">
 
 	<title>Home</title>
@@ -21,41 +21,214 @@
 	<!-- CSS Style Sheet -->
 	<link type="text/css" rel="stylesheet" href="./css/stylesheets.css">
 
+	<!-- Masonry JS -->
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	
+	<!-- Gallery Viewer -->
+	<link rel="stylesheet" href="./lightbox/lightbox.css">
 </head>
 
-<body id="index" style=background-image:url('./images/homepage/DSCF1344.jpg');>
+<body id="gallery">
 	<header>
-		<div class="bannerHome">
-			<div class="bannerTitleHome">
-				<h1>Fraser Dumayne</h1> <!-- Webpage title -->
+		<div class="banner">
+			<!-- Webpage title -->
+			<div class="bannerTitle">
+				<h1><a style="text-decoration:none" href="index.html" class="title-link">FRASER DUMAYNE</a></h1>
 			</div>
-			<div class="bannerNavHome">
+			<!-- Website navigation buttons -->
+			<div class="bannerNav">
 				<ul>
-					<li class="index"><a href="index.html">Home</a></li>
-					<li class="gallery"><a href="gallery.html">Gallery</a></li>
-					<li class="shop"><a href="shop.html">Shop</a></li>
-					<li class="contact"><a href="contact.html">Contact</a></li>
+					<li class="shop"><a href="index.html">GALLERY</a></li>
+					<li class="shop"><a href="shop.html">SHOP</a></li>
+					<li class="contact"><a href="contact.html">CONTACT</a></li>
 				</ul>
 			</div>
-			<div class="bannerSocialHome">
+			<!-- Social media buttons -->
+			<div class="bannerSocial">
 				<ul>
-					<div class="socialMediaHeaderHome">
+					<div class="socialMediaHeader">
 						<a href="https://www.linkedin.com/in/fraserdumayne/" class="fa fa-linkedin"></a>
-						<a href="https://twitter.com/frazsec1" class="fa fa-twitter"></a>
 						<a href="https://www.instagram.com/fraserdumayne/" class="fa fa-instagram"></a>
 					</div>
 				</ul>
 			</div>
-	</div>
-</header>
+		</div>
+	</header>
 
-	<div class="content">
-		<div class="intro">
-			<h1 class="pageTitle" style="color:white;font-size:3rem;padding-top:1rem">Welcome</h1> <!-- Intro to the website -->
-			<p>Welcome to my website. My name is Fraser and I'm an amateur photographer based in Scotland looking to share some of my favourite photos!</p>
-			<a href="gallery.html" style="text-decoration: none;"><button>View my Portfolio</button></a>
+	<!-- Filter buttons -->
+	<div class="filters">
+		<div class="filter-container">
+			<button class="filter-btn" data-filter="all">Show All</button>
+			<button class="filter-btn" data-filter="street">Street</button>
+			<button class="filter-btn" data-filter="nature">Nature</button>
+			<button class="filter-btn" data-filter="black & white">Black & White</button>
+			<button class="filter-btn" data-filter="colour">Colour</button>
+			<button class="filter-btn" data-filter="landscape">Landscape</button>
+			<button class="filter-btn" data-filter="portrait">Portrait</button>	
+			<!-- Add more buttons as needed -->
 		</div>
 	</div>
+
+	<div class="content">
+		<!-- Main gallery -->
+		<div class="gallery">
+		  <div class="galleryColumn">
+				<div class="galleryImage" data-tags="city,landscape">
+					<a href="./images/gallery/thumbnails/damson1_tn.jpg" data-lightbox="gallery" data-title="Edinburgh, April 2015" >
+						<img data-src="./images/gallery/thumbnails/damson1_tn.jpg" alt="Edinburgh" class="lazy-image">
+					</a>	
+				</div>
+				<div class="galleryImage" data-tags="city,landscape">
+					<a href="./images/gallery/thumbnails/12apostles1_tn.jpg" data-lightbox="gallery" data-title="Australia, April 2018" >
+						<img data-src="./images/gallery/thumbnails/12apostles1_tn.jpg" alt="Edinburgh" class="lazy-image">
+					</a>	
+				</div>
+				<div class="galleryImage" data-tags="city">
+					<a href="./images/gallery/thumbnails/12apostles2_tn.jpg" data-lightbox="gallery" data-title="Australia, April 2018" >
+						<img data-src="./images/gallery/thumbnails/12apostles2_tn.jpg" alt="Edinburgh" class="lazy-image">
+					</a>
+				</div>
+				<div class="galleryImage" data-tags="city">
+					<a href="./images/gallery/thumbnails/barcelona-sagrada1_tn.jpg" data-lightbox="gallery" data-title="Barcelona, July 2015" >
+						<img data-src="./images/gallery/thumbnails/barcelona-sagrada1_tn.jpg" alt="Edinburgh" class="lazy-image">
+					</a>					
+				</div>
+		  </div>
+		  <div class="galleryColumn">
+			<div class="galleryImage" data-tags="city,landscape">
+				<a href="./images/gallery/thumbnails/melbourne-balcony_tn.jpg" data-lightbox="gallery" data-title="Melbourne, March 2018" >
+					<img data-src="./images/gallery/thumbnails/melbourne-balcony_tn.jpg" alt="Edinburgh" class="lazy-image">
+				</a>	
+			</div>
+			<div class="galleryImage" data-tags="city">
+				<a href="./images/gallery/thumbnails/melbourne-kilda_tn.jpg" data-lightbox="gallery" data-title="Melbourne, March 2018" >
+					<img data-src="./images/gallery/thumbnails/melbourne-kilda_tn.jpg" alt="Edinburgh" class="lazy-image">
+				</a>	
+			</div>
+			<div class="galleryImage" data-tags="city,landscape">
+				<a href="./images/gallery/thumbnails/melbourne-museum_tn.jpg" data-lightbox="gallery" data-title="Melbourne, June 2018" >
+					<img data-src="./images/gallery/thumbnails/melbourne-museum_tn.jpg" alt="Edinburgh" class="lazy-image">
+				</a>
+			</div>
+			<div class="galleryImage" data-tags="city,landscape">
+				<a href="./images/gallery/thumbnails/melbourne-yara_tn.jpg" data-lightbox="gallery" data-title="Melbourne, May 2015" >
+					<img data-src="./images/gallery/thumbnails/melbourne-yara_tn.jpg" alt="Edinburgh" class="lazy-image">
+				</a>					
+			</div>
+		  </div>
+		  <div class="galleryColumn">
+			<div class="galleryImage" data-tags="city">
+				<a href="./images/gallery/thumbnails/vienna-building_tn.jpg" data-lightbox="gallery" data-title="Vienna, July 2015" >
+					<img data-src="./images/gallery/thumbnails/vienna-building_tn.jpg" alt="Edinburgh" class="lazy-image">
+				</a>	
+			</div>
+			<div class="galleryImage" data-tags="city">
+				<a href="./images/gallery/thumbnails/vienna-statue2_tn.jpg" data-lightbox="gallery" data-title="Vienna, July 2015" >
+					<img data-src="./images/gallery/thumbnails/vienna-statue2_tn.jpg" alt="Edinburgh" class="lazy-image">
+				</a>	
+			</div>
+			<div class="galleryImage" data-tags="city,landscape">
+				<a href="./images/gallery/thumbnails/vienna-statue4_tn.jpg" data-lightbox="gallery" data-title="Vienna, July 2015" >
+					<img data-src="./images/gallery/thumbnails/vienna-statue4_tn.jpg" alt="Edinburgh" class="lazy-image">
+				</a>
+			</div>
+			<div class="galleryImage" data-tags="city,landscape">
+				<a href="./images/gallery/thumbnails/vienna-sunset_tn.jpg" data-lightbox="gallery" data-title="Vienna, July 2015" >
+					<img data-src="./images/gallery/thumbnails/vienna-sunset_tn.jpg" alt="Edinburgh" class="lazy-image">
+				</a>					
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer> 
+	</footer>
+
+	<!-- Script for Lightbox image loading -->
+	<script src="./lightbox/lightbox-plus-jquery.js"></script>
+
+	<!-- Script for lazy loading-->
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+		  const lazyImages = document.querySelectorAll('.lazy-image');
+	  
+		  const imageObserver = new IntersectionObserver((entries, observer) => {
+			entries.forEach(entry => {
+			  if (entry.isIntersecting) {
+				const img = entry.target;
+				img.src = img.getAttribute('data-src'); // Load the image by setting the src
+				img.onload = () => {
+				  img.classList.add('loaded'); // Add 'loaded' class to handle opacity transition
+				};
+				observer.unobserve(img); // Stop observing once the image has been loaded
+			  }
+			});
+		  });
+	  
+		  lazyImages.forEach(image => {
+			imageObserver.observe(image);
+		  });
+		});
+	</script>
+
+	<!-- Fallback script for lazy loading-->
+	<script>	
+	if (!('IntersectionObserver' in window)) {
+	  // Load all images immediately if Intersection Observer isn't supported
+	  document.querySelectorAll('.lazy-image').forEach(img => {
+		img.src = img.getAttribute('data-src');
+		img.classList.add('loaded');
+	  });
+	}
+  	</script>
+	
+	<!-- Script for filter buttons -->
+	<script>
+		const filterButtons = document.querySelectorAll('.filter-btn');
+		const galleryItems = document.querySelectorAll('.galleryImage');
+		let activeFilters = [];
+	  
+		filterButtons.forEach(button => {
+		  button.addEventListener('click', () => {
+			const filter = button.getAttribute('data-filter');
+	  
+			// Toggle button active state
+			if (filter === 'all') {
+			  filterButtons.forEach(btn => btn.classList.remove('active'));
+			  activeFilters = [];
+			} else {
+			  button.classList.toggle('active');
+	  
+			  // Manage active filters list
+			  if (button.classList.contains('active')) {
+				activeFilters.push(filter);
+			  } else {
+				activeFilters = activeFilters.filter(f => f !== filter);
+			  }
+			}
+	  
+			// Filter images
+			galleryItems.forEach(item => {
+			  const location = item.getAttribute('data-location');
+			  const date = item.getAttribute('data-date');
+			  const tags = item.getAttribute('data-tags');
+	  
+			  // If no filters are selected, show all
+			  if (activeFilters.length === 0 || activeFilters.includes('all')) {
+				item.style.display = 'block';
+			  } else {
+				const matchesFilter = activeFilters.some(filter =>
+				  (location && location.includes(filter)) ||
+				  (date && date.includes(filter)) ||
+				  (tags && tags.includes(filter))
+				);
+				item.style.display = matchesFilter ? 'block' : 'none';
+			  }
+			});
+		  });
+		});
+	</script>
 </body>
 
 </html>

@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="My first website">
-	<meta name="keywords" content="fraser dumayne, personal website, cyber security">
+	<meta name="description" content="Fraser Dumayne Photography">
+	<meta name="keywords" content="fraser dumayne, personal website, cyber security, photography, landscapes, street photography, travel">
 	<meta name="author" content="Fraser Dumayne">
 
-	<title>Contact</title>
+	<title>Home</title>
 
 	<!-- Custom fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -20,57 +20,65 @@
 
 	<!-- CSS Style Sheet -->
 	<link type="text/css" rel="stylesheet" href="./css/stylesheets.css">
+
+	<!-- Gallery Viewer -->
+	<link rel="stylesheet" href="./lightbox/lightbox.css">
 </head>
 
 <body id="contact">
 	<header>
 		<div class="banner">
-				<div class="bannerTitle">
-					<h1>Fraser Dumayne</h1> <!-- Webpage title -->
-				</div>
-				<div class="bannerNav">
-					<ul>
-						<li class="index"><a href="index.html">Home</a></li>
-						<li class="gallery"><a href="gallery.html">Gallery</a></li>
-						<li class="shop"><a href="shop.html">Shop</a></li>
-						<li class="contact"><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-				<div class="bannerSocial">
-					<ul>
-						<div class="socialMediaHeader">
-							<a href="https://www.linkedin.com/in/fraserdumayne/" class="fa fa-linkedin"></a>
-							<a href="https://twitter.com/frazsec1" class="fa fa-twitter"></a>
-							<a href="https://www.instagram.com/fraserdumayne" class="fa fa-instagram"></a>
-						</div>
-					</ul>
-				</div>
+			<!-- Webpage title -->
+			<div class="bannerTitle">
+				<h1><a style="text-decoration:none" href="index.html">FRASER DUMAYNE</a></h1>
+			</div>
+			<!-- Website navigation buttons -->
+			<div class="bannerNav">
+				<ul>
+					<li class="shop"><a href="index.html">GALLERY</a></li>
+					<li class="shop"><a href="shop.html">SHOP</a></li>
+					<li class="contact"><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<!-- Social media buttons -->
+			<div class="bannerSocial">
+				<ul>
+					<div class="socialMediaHeader">
+						<a href="https://www.linkedin.com/in/fraserdumayne/" class="fa fa-linkedin"></a>
+						<a href="https://www.instagram.com/fraserdumayne/" class="fa fa-instagram"></a>
+					</div>
+				</ul>
+			</div>
 		</div>
 	</header>
 
 	<div class="content">
-		<h1 class="pageTitle">Contact</h1> <!-- Social media sites I can be found on -->
 		<div class="contact">
-			<p>You can find me on the following social media:</p>
-			<div class="socialMedia">
+			<div class="contact-form">
+				<h2>Get in Touch</h2>
+					<form action="https://fabform.io/f/yxyXZuJ" method="post">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" placeholder="Your Name" required>
+					
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="Your Email" required>
+					
+						<label for="message">Message</label>
+						<textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+					
+						<input type="submit" value="Send Message">
+					</form>
+				</div>
+			</div>
+			<p>Or, you can find me on the following social media</p>
+			<div class="socialMediaContact">
 				<a href="https://www.linkedin.com/in/fraserdumayne/" class="fa fa-linkedin"></a>
-				<a href="https://twitter.com/frazsec1" class="fa fa-twitter"></a>
-				<a href="https://www.instagram.com/fraserdumayne" class="fa fa-instagram"></a>
+				<a href="https://www.instagram.com/fraser.dumayne/" class="fa fa-instagram"></a>
 			</div>
 		</div>
-</div>
+	</div>
 
 	<footer> <!-- User Navigation Toolbar for quickly moving around the site -->
-		<a class='footerLink' href="index.html">Home</a>
-		<a class='footerLink' href="gallery.html">Gallery</a>
-		<a class='footerLink' href="shop.html">Shop</a>
-		<a class='footerLink' href="contact.html">Contact</a>
-		<div class="socialMediaFooter">
-			<a href="https://www.linkedin.com/in/fraserdumayne/"><i class="fa fa-linkedin fa-lg"></i></a>
-			<a href="https://twitter.com/frazsec1"><i class="fa fa-twitter fa-lg"></i></a>
-			<a href="https://www.instagram.com/fraserdumayne"><i class="fa fa-instagram fa-lg"></i></a>
-		</div>
-		<p class="siteLink">Fraser Dumayne</p>
 	</footer>
 </body>
 
