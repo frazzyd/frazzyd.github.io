@@ -32,13 +32,17 @@ body {
 	align-items: center; /* Align items vertically centered */
 	color: #000000;	
 }
-
 /*************** Title Button ***************/
+.bannerTitle {
+	flex: 2; /* Allows it to take up space */
+	padding: 0;
+}
+
 .bannerTitle h1 a {
 	display: inline-block;
-	font-size: 2.3rem; /* Larger, bolder font */
+	font-size: 2rem; /* Larger, bolder font */
 	font-weight: 900;
-	letter-spacing: 5px; /* Slightly increased letter spacing */
+	letter-spacing: 10px; /* Slightly increased letter spacing */
 	margin: 0;
 	color: #000;
 	line-height: 1;
@@ -53,16 +57,16 @@ body {
 
 /*************** Navigation Buttons ***************/
 .bannerNav {
-	float: right;
-	display: inline-block;
-	margin-left: -9%;
+    display: flex;
+    justify-content: center;
+    flex: 2; /* Takes more space */
 }
 
 .bannerNav ul {
-	list-style: none;
-	margin: 0;
-	display: flex;
-	align-items: center;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
   
 .bannerNav ul li {
@@ -70,6 +74,7 @@ body {
 }
   
 .bannerNav ul li a {
+	font-size: 1rem;
 	display: inline-block;	
 	text-decoration: none;
 	font-weight: 500;
@@ -86,8 +91,17 @@ body {
 /*************** Social Media Buttons ***************/
 .bannerSocial {
 	font-size: 2rem;
-	width: 16rem;
+	display: flex;
+	flex: 2;
+	justify-content: right;
 	text-decoration: none;
+}
+
+.bannerSocial ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .bannerSocial a {
@@ -100,7 +114,6 @@ body {
 .socialMediaHeader {
 	text-decoration: none;
 	display: inline-block;	
-	width: 16rem;
 	float: right;
 }
 
@@ -111,6 +124,7 @@ body {
 	background-color: inherit;
 	text-decoration: none;
 	float: right;
+	margin: 0;
 	padding: 1rem;
 	transition: transform 0.5s ease, color 0.5s ease; /* Smooth animation */	
 }
@@ -133,6 +147,7 @@ body {
 	color: rgb(0, 0, 0);
 	width: auto;
 	height: auto;
+	padding: 0;
 	border-radius: 10%;
 }
 
@@ -140,7 +155,6 @@ body {
 	background: #007BB6;
 	color: rgb(0, 0, 0);
 	width: auto;
-	height: auto;
 	border-radius: 10%;
 }
 /* Style each social media link */
@@ -166,7 +180,107 @@ body {
 
 
 
+
+
 /***********************************GALLERY BEGIN***********************************/
+.gallery {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.galleryColumn {
+	-ms-flex: 33%; /* IE10 */
+	flex: 33%;
+	padding: 2 2px;
+	box-sizing: border-box;
+}
+
+.galleryColumn img {
+	vertical-align: middle;
+	width: 100%;
+}
+
+/* Set styles for Gallery */
+.galleryImageWrap {
+	position: relative;
+	padding: 0.2rem;
+}
+
+/* Style the overlay which is displayed when an iamge is hovered over */
+.galleryOverlay {
+	position: absolute;
+	background: rgba(226, 226, 226, 0.288);
+	visibility: hidden;
+	align-items: center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	overflow: none;
+	justify-content: center;
+}
+
+/* Style the description shown in the overlay */
+.galleryDate {
+	transform: translateY(1em);
+	font-size: 2rem;
+	font-weight: 100;
+	letter-spacing: 10px;
+	color: #FFFFFF;
+}
+
+/* Style the location given to each image */
+.galleryLocation {
+	font-size: 3rem;
+	letter-spacing: 5px;
+	padding-bottom: 5rem;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* Style entire gallery */
+.gallery {
+	flex-wrap: wrap;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: flex;
+}
+/* Stop text from changing when clicked on */
+.galleryOverlay a {
+	text-decoration: none;
+}
+
+/* Make overlay visible when hovering over image */
+.galleryImageWrap:hover .galleryOverlay {
+	visibility: visible;
+	cursor: pointer;
+}
+
+/* Make description visible when hovering over image */
+.galleryImageWrap:hover .galleryDescription {
+	transform: translateY(0);
+}
+/***********************************GALLERY END***********************************/
+
+
+
+
+
+
+
+
+/***********************************ALBUMS BEGIN***********************************/
+.albumTitle {
+	font-size: 1.8rem;
+	text-align: center;
+}
+
 /*************** Filter buttons ***************/
 .filters {
 	display: flex;
@@ -214,9 +328,9 @@ body {
 	opacity: 1;
 }
 
-/*************** Gallery Structure ***************/
-/* Style entire gallery */
-.gallery {
+/*************** Album Gallery Structure ***************/
+/* Style entire Album */
+.album {
 	display: -ms-flexbox; /* IE10 */
 	display: flex;
 	-ms-flex-wrap: wrap; /* IE10 */
@@ -224,53 +338,54 @@ body {
 }
 
 /* Create 3 equal columns that sits next to each other */
-.galleryColumn {
+.albumColumn {
 	-ms-flex: 33%; /* IE10 */
 	flex: 33%;
 	max-width: 33%;
-	padding: 0 0px;
 	box-sizing: border-box;
 }
 
-.galleryColumn img {
+.albumColumn img {
 	vertical-align: middle;
 	width: 100%;
 }
 
-.galleryImage {
+.albumImage {
 	position: relative;
 	overflow: hidden; /* Ensures images don't spill out of their container */
 	transition: transform 0.3s ease, color 0.5s ease;	
 }
   
 /* Image styling */
-.galleryImage img {	
+.albumImage img {	
 	transition: transform 0.4s ease, filter 0.3s ease; /* Smooth transition for scaling and filter effects */
 }
   
 /* Image hover effect */
-.galleryImage:hover img {
+.albumImage:hover img {
 	transform: scale(1.1); /* Enlarge the image slightly on hover */
 	filter: brightness(1.1); /* Make the image slightly brighter on hover */
 }
 
 /* Set styles for Gallery */
-.galleryImage {
+.albumImage {
 	position: relative;
-	padding: 5px;
+	padding: 3px;
 }
 
 /* Make overlay visible when hovering over image */
-.galleryImage:hover .galleryOverlay {
+.albumImage:hover .albumOverlay {
 	visibility: visible;
 	cursor: pointer;
 }
 
 /* Make description visible when hovering over image */
-.galleryImage:hover .galleryDescription {
+.albumImage:hover .albumDescription {
 	transform: translateY(0);
 }
-/***********************************GALLERY END***********************************/
+/***********************************ALBUMS END***********************************/
+
+
 
 
 
@@ -279,6 +394,11 @@ body {
 
 
 /***********************************SHOP BEGIN***********************************/
+.shops{
+	text-align: center;
+	vertical-align: middle;
+}	
+
 /* Adjust shops links */
 .shopLink {
 	list-style-type: circle;
@@ -286,54 +406,31 @@ body {
 
 /* Adjust shops links */
 .shopLink li {
-	display: flex;
-	margin-right: 2rem;
+	display: block;
+	font-size: 1.5rem;
 }
 
 /* Adjust shops links */
 .shopLink a {
-	color: #c27c93;
+	color: #f5a339;
 }
 
 /* Style shop boxes on shops page */
 .shopRow {
-	display: flex;
+	display: block;
+	padding-bottom: 2rem;
 } 
 
 /* Make style consistent for each shops box */
 .shop-500px,
 .shop-picfair {
 	flex: 50%;
-	text-align: left;
+	text-align: center;
 }
 
-.shop-picfair-image
-{
-    height: 10px;
-    width: 20%;
-	padding-left: 10rem;
-    object-fit: cover;
-}
-
-.shop-500px-image
-{
-    height: 10px;
-    width: 20%;
-	padding-right: 10rem;
-    object-fit: cover;
-	padding-top: 15rem;
-}
-
-/* spacing between text and image*/
-.shop-picfair {
-	padding-left: 5rem;
-	padding-right: 10rem;	
-}
-
-/* spacing between text and image*/
-.shop-500px {
-	padding-top: 20rem;
-	padding-left: 10rem;	
+.shop-500px h1,
+.shop-picfair h1 {
+	font-size: 3rem;
 }
 
 .shop-500px ul,
@@ -342,13 +439,6 @@ body {
 	list-style: none;
 	padding-left: 0;
 	text-decoration: none;
-}
-
-.imagePicfair,
-.image500px {
-	margin-top: 8px;
-	vertical-align: middle;
-	width: 100%;
 }
 /***********************************SHOPS END***********************************/
 
@@ -424,6 +514,8 @@ body {
 
 
 
+
+
 /***********************************MEDIA QUERIES START***********************************/
 /* Style for Mobile Phones */
 @media only screen and (max-width: 800px){
@@ -457,6 +549,7 @@ body {
 		font-weight: 900;
 		letter-spacing: 6px; /* Slightly increased letter spacing */
 		margin: 0;
+		justify-content: center;
 		color: #000;
 		text-decoration: none;
 	}
@@ -467,6 +560,17 @@ body {
 		text-decoration: none;
 		margin: 0 auto;
 		display: flex;
+		justify-content: center;
+		padding: 0;
+		text-align: 0;
+		position: relative;
+		top: 300%;
+	}
+	.bannerNav ul {
+		text-decoration: none;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
 		padding: 0;
 		text-align: 0;
 		position: relative;
