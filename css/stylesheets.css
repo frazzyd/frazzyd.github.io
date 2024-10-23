@@ -631,6 +631,20 @@ body {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	.galleryDate {
+		transform: translateY(1em);
+		font-size: 1.8rem;
+		font-weight: 100;
+		letter-spacing: 5px;
+		color: #FFFFFF;
+	}
+	/* Style the location given to each image */
+	.galleryTitle {
+		font-size: 2rem;
+		letter-spacing: 5px;
+		font-weight: bold;
+		color: #FFFFFF;
+	}
 	.album {
 		padding: 10px;
 	}
