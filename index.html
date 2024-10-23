@@ -38,7 +38,7 @@
 			<!-- Website navigation buttons -->
 			<div class="bannerNav">
 				<ul>
-					<li class="gallery"><a href="index.html">GALLERY</a></li>
+					<li class="gallery"><a class="active" href="index.html">GALLERY</a></li>
 					<li class="shop"><a href="shop.html">SHOP</a></li>
 					<li class="contact"><a href="contact.html">CONTACT</a></li>
 				</ul>
@@ -57,60 +57,48 @@
 
 	<div class="content">
 		<!-- Main gallery -->
-		<div class="gallery">
-			<div class="galleryColumn">
-				<div class="galleryImageWrap">
-						<img src="./images/gallery/thumbnails/portugal2024-thumbnail.jpg"/>
-					<div class="galleryOverlay">
-						<a href="portugal2024.html">
-							<span class=galleryLocation><br />Portugal</span>
-							<span class=galleryDate><br />September 2024</span></p></a>
-					</div>
-				</div>
-				<div class="galleryImageWrap">
-					<img src="./images/gallery/thumbnails/oslo2024-thumbnail.jpg"/>
+		<div class="galleryContainer">
+			<div class="galleryImage">
+					<img src="./images/albums/portugal2024/portugal3-tn.jpg" class="fade-in"/>
 				<div class="galleryOverlay">
-					<a href="oslo2024.html">
-						<span class=galleryLocation><br />Oslo</span>
-						<span class=galleryDate><br />April 2024</span></p></a>
+					<a href="portugal2024.html">
+						<span class=galleryTitle><br />Portugal</span>
+						<span class=galleryDate><br />September 2024</span></p></a>
 				</div>
 			</div>
-		  </div>
-		  <div class="galleryColumn">
-			<div class="galleryImageWrap">
-					<img src="./images/gallery/thumbnails/bologna2024-thumbnail.jpg"/>
+			<div class="galleryImage">
+				<img src="./images/albums/oslo2024/oslo2-tn.jpg" class="fade-in"/>
+				<div class="galleryOverlay">
+					<a href="oslo2024.html">
+						<span class=galleryTitle><br />Oslo</span>
+						<span class=galleryDate><br />April 2024</span></p></a>
+				</div>
+		  	</div>
+			<div class="galleryImage">
+					<img src="./images/albums/bologna2024/bologna2-tn.jpg" class="fade-in"/>
 				<div class="galleryOverlay">
 					<a href="bologna2024.html">
-						<span class=galleryLocation><br />Bologna</span>
+						<span class=galleryTitle><br />Bologna</span>
 						<span class=galleryDate><br />July 2024</span></p></a>
 				</div>
 			</div>
-			<div class="galleryImageWrap">
-				<img src="./images/gallery/thumbnails/japan2023-thumbnail3.jpg"/>
-			<div class="galleryOverlay">
-				<a href="japan2023.html">
-					<span class=galleryLocation><br />Japan</span>
-					<span class=galleryDate><br />September 2023</span></p></a>
+			<div class="galleryImage">
+					<img src="./images/albums/amsterdam2024/amsterdam1-tn.jpg" class="fade-in"/>
+				<div class="galleryOverlay">
+					<a href="amsterdam2024.html">
+						<span class=galleryTitle><br />Amsterdam</span>
+						<span class=galleryDate><br />May 2024</span></p></a>
+				</div>
 			</div>
+			<div class="galleryImage">
+				<img src="./images/albums/japan2023/japan8-tn.jpg" class="fade-in"/>
+				<div class="galleryOverlay">
+					<a href="japan2023.html">
+						<span class=galleryTitle><br />Japan</span>
+						<span class=galleryDate><br />September 2023</span></p></a>
+				</div>
+			</div>			
 		</div>
-	  	</div>
-	  <div class="galleryColumn">
-		<div class="galleryImageWrap">
-				<img src="./images/gallery/thumbnails/amsterdam2024-thumbnail.jpg"/>
-			<div class="galleryOverlay">
-				<a href="amsterdam2024.html">
-					<span class=galleryLocation><br />Amsterdam</span>
-					<span class=galleryDate><br />May 2024</span></p></a>
-			</div>
-		</div>
-		<div class="galleryImageWrap">
-			<img src="./images/gallery/thumbnails/scotland2023-thumbnail.jpg"/>
-		<div class="galleryOverlay">
-			<a href="scotland2023.html">
-				<span class=galleryLocation><br />Scotland</span>
-				<span class=galleryDate><br />2023</span></p></a>
-		</div>
-	</div>
 	</div>
 
 	<!-- Footer -->
@@ -151,6 +139,28 @@
 	  });
 	}
   	</script>
-</body>
 
+		
+	<!-- Image fade in script -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const images = document.querySelectorAll('.fade-in'); // Select all images with 'fade-in' class
+		
+			const observer = new IntersectionObserver((entries, observer) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('show'); // Add 'show' class when image is in view
+						observer.unobserve(entry.target); // Stop observing once the image has been shown
+					}
+				});
+			}, {
+				threshold: 0.1 // Trigger when 10% of the image is visible
+			});
+		
+			images.forEach(image => {
+				observer.observe(image); // Observe each image
+			});
+		});
+	</script>
+</body>
 </html>

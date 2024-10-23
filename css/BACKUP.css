@@ -1,0 +1,766 @@
+/***********************************BANNER/FOOTER/ALL STYLES START***********************************/
+/* Font import for a more elegant look */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+header {
+	display: block;
+	vertical-align: top;
+	padding-bottom: 3rem; /* Padding for space around header */			
+}
+
+/* Set basic style which is consistent across all pages color: #525252;*/
+body {
+	background-color: white;
+	color: #000000;
+	letter-spacing: 0.05rem;
+	line-height: 1.9rem;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #fff;
+	margin-left: 6rem;
+	margin-right: 6rem;			
+}
+
+/* Basic text contents of each page */
+.content {
+	text-align: center;
+	min-height: calc(100vh - 2rem);	
+}
+
+.banner {
+	display: flex;
+	justify-content: space-between; /* Distribute space between title and nav */
+	align-items: center; /* Align items vertically centered */
+	color: #000000;	
+}
+/*************** Title Button ***************/
+.bannerTitle {
+	flex: 2; /* Allows it to take up space */
+	padding: 0;
+}
+
+.bannerTitle h1 a {
+	display: inline-block;
+	font-size: 2rem; /* Larger, bolder font */
+	font-weight: 900;
+	letter-spacing: 10px; /* Slightly increased letter spacing */
+	margin: 0;
+	color: #000;
+	line-height: 1;
+	text-decoration: none;
+	transition: transform 0.5s ease, color 0.5s ease; /* Smooth animation */
+}
+
+.bannerTitle h1 a:hover {
+	transform: scale(1.1); /* Grows the title slightly on hover */
+	color: #525252; /* Optionally, you can change the color when hovered */
+}
+
+/*************** Navigation Buttons ***************/
+.bannerNav {
+    display: flex;
+    justify-content: center;
+    flex: 2; /* Takes more space */
+}
+
+.bannerNav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.bannerNav ul li {
+    margin: 0 20px;
+}
+
+.bannerNav ul li a {
+    position: relative;
+    padding: 12px 0; /* Consistent padding */
+    margin: 0 4px;
+    letter-spacing: 1px;
+    line-height: 12px; /* Consistent line-height */
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1.5rem;
+    display: inline-block;    
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.bannerNav ul li a:hover, .bannerNav ul li a:focus {
+    transform: scale(1.1);
+    color: #525252;
+}
+
+.bannerNav ul li a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px; /* Reduced line thickness */
+    width: 100%; 
+    background-color: #000;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-out;
+}
+
+/* Keep the line from expanding from center on hover */
+.bannerNav ul li a:hover::before, .bannerNav ul li a:focus::before {
+    transform: scaleX(1); /* Fully expand the line */
+}
+
+/* Active link style - Persistent underline */
+.bannerNav ul li a.active::before {
+    transform: scaleX(1); /* Keep the line fully expanded */
+    background-color: #000; /* Ensure underline is visible */
+}
+
+.bannerNav ul li a.active {
+    color: #525252;
+    padding: 12px 0; /* Same padding as other states to prevent height change */
+    line-height: 12px; /* Keep line-height consistent */
+    text-decoration: none;
+}
+/*************** Social Media Buttons ***************/
+.bannerSocial {
+	font-size: 2rem;
+	display: flex;
+	flex: 2;
+	justify-content: right;
+	text-decoration: none;
+}
+
+.bannerSocial ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bannerSocial a {
+	font-size: 2rem;
+	width: 16rem;
+	text-decoration: none;
+}
+
+/* Block containing social media links on footer */
+.socialMediaHeader {
+	text-decoration: none;
+	display: inline-block;	
+	float: right;
+}
+
+/* Style header social links */
+.socialMediaHeader a {
+	width: 1.7rem;
+	color: rgb(0, 0, 0);
+	background-color: inherit;
+	text-decoration: none;
+	float: right;
+	margin: 0;
+	padding: 1rem;
+	transition: transform 0.5s ease, color 0.5s ease; /* Smooth animation */	
+}
+
+/* Style all font awesome icons*/
+.fa {
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+/* Hover effect for Social Media Icons */
+.fa:hover {
+	transform: scale(1.1); /* Grows the title slightly on hover */
+	color: #525252; /* Optionally, you can change the color when hovered */
+}
+
+.fa-instagram {
+	background: #ffb3d9;
+	color: rgb(0, 0, 0);
+	width: auto;
+	height: auto;
+	padding: 0;
+	border-radius: 10%;
+}
+
+.fa-linkedin {
+	background: #007BB6;
+	color: rgb(0, 0, 0);
+	width: auto;
+	border-radius: 10%;
+}
+/* Style each social media link */
+.socialMedia a {
+	text-decoration: none;
+}
+
+/* Banner social links */
+.bannerSocial ul li {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+}
+
+/* Block containing social media links on header */
+.socialMediaHeader {
+	text-decoration: none;
+	float: right;
+}
+/***********************************BANNER/FOOTER/ALL STYLES END***********************************/
+
+
+
+
+
+
+
+/***********************************GALLERY BEGIN***********************************/
+.gallery {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.galleryColumn {
+	-ms-flex: 33%; /* IE10 */
+	flex: 33%;
+	padding: 2 2px;
+	box-sizing: border-box;
+}
+
+.galleryColumn img {
+	vertical-align: middle;
+	width: 100%;
+}
+
+/* Set styles for Gallery */
+.galleryImageWrap {
+	position: relative;
+	padding: 0.2rem;
+}
+
+/* Style the overlay which is displayed when an iamge is hovered over */
+.galleryOverlay {
+	position: absolute;
+	background: rgba(226, 226, 226, 0.288);
+	visibility: hidden;
+	align-items: center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	overflow: none;
+	justify-content: center;
+}
+
+/* Style the description shown in the overlay */
+.galleryDate {
+	transform: translateY(1em);
+	font-size: 2rem;
+	font-weight: 100;
+	letter-spacing: 10px;
+	color: #FFFFFF;
+}
+
+/* Style the location given to each image */
+.galleryLocation {
+	font-size: 3rem;
+	letter-spacing: 5px;
+	padding-bottom: 5rem;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* Style entire gallery */
+.gallery {
+	flex-wrap: wrap;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: flex;
+}
+/* Stop text from changing when clicked on */
+.galleryOverlay a {
+	text-decoration: none;
+}
+
+/* Make overlay visible when hovering over image */
+.galleryImageWrap:hover .galleryOverlay {
+	visibility: visible;
+	cursor: pointer;
+}
+
+/* Make description visible when hovering over image */
+.galleryImageWrap:hover .galleryDescription {
+	transform: translateY(0);
+}
+/***********************************GALLERY END***********************************/
+
+
+
+
+
+
+
+
+/***********************************ALBUMS BEGIN***********************************/
+.albumTitle {
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+/*************** Filter buttons ***************/
+.filters {
+	display: flex;
+	justify-content: center; /* Centers the buttons horizontally */
+	overflow-x: auto; /* Allows horizontal scrolling */
+	white-space: nowrap; /* Ensures buttons stay on one line */
+	padding: 10px 0;
+  }
+
+.filter-container {
+	display: inline-block;
+}
+
+.filter-btn {
+	display: inline-block;
+	margin: 5px;
+	padding: 10px 20px;
+	font-size: 1.1rem;
+	background-color: #ebebebb0;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: transform 0.5s ease, color 0.5s ease; /* Smooth transition for nav links */	
+}
+
+.filter-btn:hover {
+	transform: scale(1.1); /* Slightly larger on hover */
+	color: #525252; /* Darker on hover */
+}
+  
+.filter-btn.active {
+	background-color: #333; /* Darker grey for active buttons */
+	color: #fff;
+}
+
+.lazy-image {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+  }
+  
+.lazy-image.loaded {
+	opacity: 1;
+}
+
+/*************** Album Gallery Structure ***************/
+/* Style entire Album */
+.album {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+}
+
+/* Create 4 equal columns that sits next to each other */
+.albumColumn {
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+	max-width: 25%;
+	box-sizing: border-box;
+}
+
+.albumColumn img {
+	vertical-align: middle;
+	width: 100%;
+}
+
+.albumImage {
+	position: relative;
+	overflow: hidden; /* Ensures images don't spill out of their container */
+	transition: transform 0.3s ease, color 0.5s ease;	
+}
+  
+/* Image styling */
+.albumImage img {	
+	transition: transform 0.4s ease, filter 0.3s ease; /* Smooth transition for scaling and filter effects */
+}
+  
+/* Image hover effect */
+.albumImage:hover img {
+	transform: scale(1.1); /* Enlarge the image slightly on hover */
+	filter: brightness(1.1); /* Make the image slightly brighter on hover */
+}
+
+/* Set styles for Gallery */
+.albumImage {
+	position: relative;
+	padding: 3px;
+}
+
+/* Make overlay visible when hovering over image */
+.albumImage:hover .albumOverlay {
+	visibility: visible;
+	cursor: pointer;
+}
+
+/* Make description visible when hovering over image */
+.albumImage:hover .albumDescription {
+	transform: translateY(0);
+}
+
+/* Start with images hidden (opacity 0) and slightly moved down */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out; /* Smooth fade-in */
+}
+
+/* When visible, reset opacity and position */
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/***********************************ALBUMS END***********************************/
+
+
+
+
+
+
+
+
+
+/***********************************SHOP BEGIN***********************************/
+.shops{
+	text-align: center;
+	vertical-align: middle;
+}	
+
+/* Adjust shops links */
+.shopLink {
+	list-style-type: circle;
+}
+
+/* Adjust shops links */
+.shopLink li {
+	display: block;
+	font-size: 1.5rem;
+}
+
+/* Adjust shops links */
+.shopLink a {
+	color: #8abae7;
+}
+
+/* Style shop boxes on shops page */
+.shopRow {
+	display: block;
+	padding-bottom: 2rem;
+} 
+
+/* Make style consistent for each shops box */
+.shop-500px,
+.shop-picfair {
+	flex: 50%;
+	text-align: center;
+}
+
+.shop-500px h1,
+.shop-picfair h1 {
+	font-size: 3rem;
+}
+
+.shop-500px ul,
+.shop-picfair ul {
+	text-align: center;
+	list-style: none;
+	padding-left: 0;
+	text-decoration: none;
+}
+/***********************************SHOPS END***********************************/
+
+
+
+
+
+
+/***********************************CONTACT START***********************************/
+.socialMediaContact {
+	font-size: 30px;
+	font-weight: 3rem;
+	text-decoration: none;
+}
+
+.socialMediaContact a {
+	font-size: 3rem;
+	margin: 0.4rem;
+	padding: 1.5rem;
+	text-decoration: none;
+}
+
+/* Contact Form */
+.contact-form {
+	margin-bottom: 50px;
+	background-color: #fff;
+	padding: 30px;
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.contact-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-form label {
+	margin-bottom: 5px;
+	font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 100%;
+}
+
+.contact-form input[type="submit"] {
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	border: none;
+}
+
+.contact-form input[type="submit"]:hover {
+	background-color: #555;
+}
+/***********************************CONTACT END***********************************/
+
+
+
+
+
+
+/***********************************MEDIA QUERIES START***********************************/
+/* Style for Mobile Phones */
+@media only screen and (max-width: 800px){
+	/** HEADER **/
+	header {
+		height: 5em;
+		display: flex;
+		flex-direction: column;
+		width: 100%;	
+		padding-bottom: 3.2rem;
+	}
+	body {
+		color: #000000;
+		letter-spacing: 0.05rem;
+		font-family: 'Montserrat', sans-serif;
+		background-color: #fff;
+		margin: 0 auto;	
+		width: 100%;	
+	}
+	.banner {
+		display: flex;
+		justify-content: center;
+	}
+	.bannerTitle {
+		margin: 0;
+		position: absolute;
+		top: 0%;
+	}
+	.bannerTitle h1 a {
+		font-size: 1.3rem; /* Larger, bolder font */
+		font-weight: 900;
+		letter-spacing: 6px; /* Slightly increased letter spacing */
+		margin: 0;
+		justify-content: center;
+		color: #000;
+		text-decoration: none;
+	}
+	.pageTitle {
+		font-size: 3rem;
+	}
+	.bannerNav {
+		text-decoration: none;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		text-align: 0;
+		position: relative;
+		top: 210%;
+	}
+	.bannerNav ul {
+		text-decoration: none;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		text-align: 0;
+		position: relative;
+		top: 300%;
+	}
+	.bannerNav a {
+		text-decoration: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.bannerNav a:hover{
+		color: black;	
+	}
+	.bannerNav ul {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	.bannerNav ul li {
+	} 
+	.bannerNav ul li a {
+		display: inline-block;	
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 1rem;
+		color: #000000;
+		transition: transform 0.5s ease, color 0.5s ease; /* Smooth transition for nav links */
+	}
+	  
+	.bannerNav ul li a:hover {
+		transform: scale(1.1); /* Slightly larger on hover */
+		color: #525252; /* Darker on hover */
+	}
+	.bannerSocial {
+		display: none;
+	}
+	.bannerSocial ul li{
+		display: none;	
+	}
+	.socialMediaHeader {
+		display: none;
+	}
+	.socialMediaHeader a {
+		display: none;
+	}
+	.bannerNav a:hover {
+		opacity: 0.7;
+	}
+	/* Responsive layout - makes a two column-layout instead of four columns */
+	.galleryColumn {
+	  -ms-flex: 50%;
+	  flex: 50%;
+	  max-width: 50%;
+	}
+	.shop,
+	.gallery,
+	.contact {
+		margin: auto;
+		width: auto;
+		padding: 0;
+	}
+	.albumTitle a {
+		font-size: 2.1rem;
+		font-weight: 600;
+	}
+	.albumColumn {
+		-ms-flex: 50%; /* IE10 */
+		flex: 50%;
+		max-width: 50%;
+		box-sizing: border-box;
+	}	
+	/** SHOP PAGE**/
+	.shops {
+		display: block;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.shopRow {
+		display: inline;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		max-width: 100%;
+	}
+	.shop-500px,
+	.shop-picfair {
+		display: block;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		max-width: 100%;
+	}
+	.shopLink {
+		display: inline-block;
+	}
+	ul.shopLink {
+		padding: 0;
+		margin: 0;
+	}
+	ul.shopLink li {
+		display: list-item;
+		padding: 0;
+		margin: 0;
+	}	
+	.shop-picfair-image,
+	.shop-500px-image {
+		display: none;
+	}
+	.imagePicfair,
+	.image500px {
+		display: none;
+	}
+	/** CONTACT PAGE**/
+	.content .socialMedia a{
+		display: inline-block;
+	}
+	.content .socialMedia .fa-linkedin,
+	.content .socialMedia .fa-instagram{
+		border-radius: 10%;
+		width: 2rem;
+	}
+	.content {
+		min-height: calc(100vh - 39rem);
+	}
+	.contact-form {
+		margin-bottom: 50px;
+		background-color: #fff;
+		padding: none;
+		width: 70%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto; 
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.galleryColumn {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+}

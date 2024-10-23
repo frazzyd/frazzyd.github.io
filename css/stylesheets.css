@@ -70,24 +70,60 @@ body {
 }
   
 .bannerNav ul li {
-	margin: 0 20px;
-}
-  
-.bannerNav ul li a {
-	font-size: 1rem;
-	display: inline-block;	
-	text-decoration: none;
-	font-weight: 500;
-	color: #000000;
-	font-size: 1.5rem;
-	transition: transform 0.5s ease, color 0.5s ease; /* Smooth transition for nav links */
-}
-  
-.bannerNav ul li a:hover {
-	transform: scale(1.1); /* Slightly larger on hover */
-	color: #525252; /* Darker on hover */
+    margin: 0 20px;
 }
 
+.bannerNav ul li a {
+    position: relative;
+    padding: 12px 0; /* Consistent padding */
+    margin: 0 4px;
+    letter-spacing: 1px;
+    line-height: 12px; /* Consistent line-height */
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1.5rem;
+    display: inline-block;    
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.bannerNav ul li a:hover, .bannerNav ul li a:focus {
+    transform: scale(1.1);
+    color: #525252;
+}
+
+.bannerNav ul li a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px; /* Reduced line thickness */
+    width: 100%; 
+    background-color: #000;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-out;
+}
+
+/* Keep the line from expanding from center on hover */
+.bannerNav ul li a:hover::before, .bannerNav ul li a:focus::before {
+    transform: scaleX(1); /* Fully expand the line */
+}
+
+/* Active link style - Persistent underline */
+.bannerNav ul li a.active::before {
+    transform: scaleX(1); /* Keep the line fully expanded */
+    background-color: #000; /* Ensure underline is visible */
+}
+
+.bannerNav ul li a.active {
+    color: #525252;
+    padding: 12px 0; /* Same padding as other states to prevent height change */
+    line-height: 12px; /* Keep line-height consistent */
+    text-decoration: none;
+}
 /*************** Social Media Buttons ***************/
 .bannerSocial {
 	font-size: 2rem;
@@ -180,33 +216,31 @@ body {
 
 
 
-
-
 /***********************************GALLERY BEGIN***********************************/
-.gallery {
-	display: -ms-flexbox; /* IE10 */
-	display: flex;
-	-ms-flex-wrap: wrap; /* IE10 */
-	flex-wrap: wrap;
+.galleryContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next row */
 }
 
-/* Create four equal columns that sits next to each other */
-.galleryColumn {
-	-ms-flex: 33%; /* IE10 */
-	flex: 33%;
-	padding: 2 2px;
-	box-sizing: border-box;
+.galleryContainer img {
+    width: 100%;
+    height: auto;
 }
 
-.galleryColumn img {
-	vertical-align: middle;
-	width: 100%;
-}
-
-/* Set styles for Gallery */
-.galleryImageWrap {
+.galleryImage {
+    flex: 1 1 calc(33% - 9px); /* 25% width for 4 columns, accounting for gap */
+	padding-left: 6px;
+	padding-right: 6px;
 	position: relative;
-	padding: 0.2rem;
+	overflow: hidden; /* Ensures images don't spill out of their container */
+	transition: transform 0.3s ease, color 0.5s ease;	
+}
+  
+/* Image styling */
+.galleryImage img {	
+	width: 100%;
+    height: auto;
+	transition: transform 0.7s ease, filter 0.7s ease; /* Smooth transition for scaling and filter effects */
 }
 
 /* Style the overlay which is displayed when an iamge is hovered over */
@@ -219,8 +253,8 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	display: flex;
 	overflow: none;
+	display: flex;
 	justify-content: center;
 }
 
@@ -234,42 +268,29 @@ body {
 }
 
 /* Style the location given to each image */
-.galleryLocation {
-	font-size: 3rem;
+.galleryTitle {
+	font-size: 2rem;
 	letter-spacing: 5px;
-	padding-bottom: 5rem;
 	font-weight: bold;
 	color: #FFFFFF;
 }
 
-/* Style entire gallery */
-.gallery {
-	flex-wrap: wrap;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -moz-flex;
-	display: flex;
-}
 /* Stop text from changing when clicked on */
 .galleryOverlay a {
 	text-decoration: none;
 }
 
 /* Make overlay visible when hovering over image */
-.galleryImageWrap:hover .galleryOverlay {
+.galleryImage:hover .galleryOverlay {
 	visibility: visible;
 	cursor: pointer;
 }
 
 /* Make description visible when hovering over image */
-.galleryImageWrap:hover .galleryDescription {
+.galleryImage:hover .galleryDescription {
 	transform: translateY(0);
 }
 /***********************************GALLERY END***********************************/
-
-
-
 
 
 
@@ -331,33 +352,27 @@ body {
 /*************** Album Gallery Structure ***************/
 /* Style entire Album */
 .album {
-	display: -ms-flexbox; /* IE10 */
 	display: flex;
-	-ms-flex-wrap: wrap; /* IE10 */
-	flex-wrap: wrap;
-}
-
-/* Create 3 equal columns that sits next to each other */
-.albumColumn {
-	-ms-flex: 33%; /* IE10 */
-	flex: 33%;
-	max-width: 33%;
-	box-sizing: border-box;
-}
-
-.albumColumn img {
-	vertical-align: middle;
-	width: 100%;
+	align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap onto the next row */
 }
 
 .albumImage {
-	position: relative;
+    flex: 1 1 calc(24% - 15px); /* 25% width for 4 columns, accounting for gap */
 	overflow: hidden; /* Ensures images don't spill out of their container */
+	margin-left: 20px;
+	margin-top: 10px;
+	padding: 0;
+	object-fit: cover;
 	transition: transform 0.3s ease, color 0.5s ease;	
 }
-  
+
 /* Image styling */
 .albumImage img {	
+	width: 100%;
+    height: auto;
+	max-height: 100%;
+	min-width: 100%;
 	transition: transform 0.4s ease, filter 0.3s ease; /* Smooth transition for scaling and filter effects */
 }
   
@@ -367,27 +382,19 @@ body {
 	filter: brightness(1.1); /* Make the image slightly brighter on hover */
 }
 
-/* Set styles for Gallery */
-.albumImage {
-	position: relative;
-	padding: 3px;
+/* Start with images hidden (opacity 0) and slightly moved down */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out; /* Smooth fade-in */
 }
 
-/* Make overlay visible when hovering over image */
-.albumImage:hover .albumOverlay {
-	visibility: visible;
-	cursor: pointer;
-}
-
-/* Make description visible when hovering over image */
-.albumImage:hover .albumDescription {
-	transform: translateY(0);
+/* When visible, reset opacity and position */
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 /***********************************ALBUMS END***********************************/
-
-
-
-
 
 
 
@@ -412,7 +419,7 @@ body {
 
 /* Adjust shops links */
 .shopLink a {
-	color: #f5a339;
+	color: #8abae7;
 }
 
 /* Style shop boxes on shops page */
@@ -441,7 +448,6 @@ body {
 	text-decoration: none;
 }
 /***********************************SHOPS END***********************************/
-
 
 
 
@@ -515,7 +521,6 @@ body {
 
 
 
-
 /***********************************MEDIA QUERIES START***********************************/
 /* Style for Mobile Phones */
 @media only screen and (max-width: 800px){
@@ -564,7 +569,7 @@ body {
 		padding: 0;
 		text-align: 0;
 		position: relative;
-		top: 300%;
+		top: 210%;
 	}
 	.bannerNav ul {
 		text-decoration: none;
@@ -620,12 +625,24 @@ body {
 	.bannerNav a:hover {
 		opacity: 0.7;
 	}
-	/* Responsive layout - makes a two column-layout instead of four columns */
-	.galleryColumn {
-	  -ms-flex: 50%;
-	  flex: 50%;
-	  max-width: 50%;
+	.galleryImage {
+		flex: 1 1 calc(50% - 9px); /* 25% width for 4 columns, accounting for gap */
 	}
+	.album {
+		padding: 10px;
+	}
+	.albumImage {
+		flex: 1 1 calc(50% - 25px); /* 25% width for 4 columns, accounting for gap */
+		margin: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+	}
+	.albumTitle a {
+		font-size: 2.1rem;
+		font-weight: 600;
+	}
+	/* Responsive layout - makes a two column-layout instead of four columns */
 	.shop,
 	.gallery,
 	.contact {
@@ -636,7 +653,6 @@ body {
 	/** SHOP PAGE**/
 	.shops {
 		display: block;
-		padding-top: 2rem;
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
