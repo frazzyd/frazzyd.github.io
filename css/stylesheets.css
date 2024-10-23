@@ -627,6 +627,9 @@ body {
 	}
 	.galleryImage {
 		flex: 1 1 calc(50% - 9px); /* 25% width for 4 columns, accounting for gap */
+		margin: 0;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	.album {
 		padding: 10px;
