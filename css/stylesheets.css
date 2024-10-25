@@ -193,6 +193,7 @@ body {
 	width: auto;
 	border-radius: 10%;
 }
+
 /* Style each social media link */
 .socialMedia a {
 	text-decoration: none;
@@ -406,46 +407,9 @@ body {
 	vertical-align: middle;
 }	
 
-/* Adjust shops links */
-.shopLink {
-	list-style-type: circle;
-}
-
-/* Adjust shops links */
-.shopLink li {
-	display: block;
-	font-size: 1.5rem;
-}
-
-/* Adjust shops links */
-.shopLink a {
-	color: #8abae7;
-}
-
-/* Style shop boxes on shops page */
-.shopRow {
-	display: block;
-	padding-bottom: 2rem;
-} 
-
-/* Make style consistent for each shops box */
-.shop-500px,
-.shop-picfair {
-	flex: 50%;
-	text-align: center;
-}
-
-.shop-500px h1,
-.shop-picfair h1 {
-	font-size: 3rem;
-}
-
-.shop-500px ul,
-.shop-picfair ul {
-	text-align: center;
-	list-style: none;
-	padding-left: 0;
-	text-decoration: none;
+.shops img {
+	width: 20%;
+	height: 20%;
 }
 /***********************************SHOPS END***********************************/
 
@@ -550,11 +514,12 @@ body {
 		top: 0%;
 	}
 	.bannerTitle h1 a {
-		font-size: 1.3rem; /* Larger, bolder font */
+		font-size: 1.4rem; /* Larger, bolder font */
 		font-weight: 900;
-		letter-spacing: 6px; /* Slightly increased letter spacing */
+		letter-spacing: 7px; /* Slightly increased letter spacing */
 		margin: 0;
 		justify-content: center;
+		text-align: center;
 		color: #000;
 		text-decoration: none;
 	}
@@ -672,41 +637,10 @@ body {
 		display: block;
 		padding-left: 1rem;
 		padding-right: 1rem;
-	}
-	.shopRow {
-		display: inline;
-		margin: 0;
-		padding: 0;
-		text-align: center;
-		max-width: 100%;
-	}
-	.shop-500px,
-	.shop-picfair {
-		display: block;
-		margin: 0;
-		padding: 0;
-		text-align: center;
-		max-width: 100%;
-	}
-	.shopLink {
-		display: inline-block;
-	}
-	ul.shopLink {
-		padding: 0;
-		margin: 0;
-	}
-	ul.shopLink li {
-		display: list-item;
-		padding: 0;
-		margin: 0;
 	}	
-	.shop-picfair-image,
-	.shop-500px-image {
-		display: none;
-	}
-	.imagePicfair,
-	.image500px {
-		display: none;
+	.shops img {
+		width: 40%;
+		height: 20%;
 	}
 	/** CONTACT PAGE**/
 	.content .socialMedia a{
