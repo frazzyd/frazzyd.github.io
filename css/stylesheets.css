@@ -359,22 +359,21 @@ body {
 }
 
 .albumImage {
-    flex: 1 1 calc(24% - 15px); /* 25% width for 4 columns, accounting for gap */
-	overflow: hidden; /* Ensures images don't spill out of their container */
-	margin-left: 20px;
-	margin-top: 10px;
-	padding: 0;
-	object-fit: cover;
-	transition: transform 0.3s ease, color 0.5s ease;	
+    flex: 1 1 calc(24% - 15px); /* Keeps the 4-column layout */
+    overflow: hidden; /* Ensures images don't spill out of their container */
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 0;
+    aspect-ratio: 3 / 4; /* Force each container to have a consistent 3:4 ratio */
+    transition: transform 0.3s ease, color 0.5s ease; /* Smooth hover transition */
 }
 
 /* Image styling */
-.albumImage img {	
-	width: 100%;
-    height: auto;
-	max-height: 100%;
-	min-width: 100%;
-	transition: transform 0.4s ease, filter 0.3s ease; /* Smooth transition for scaling and filter effects */
+.albumImage img {
+    width: 100%;
+    height: 100%; /* Ensures images completely fill the 3:4 container */
+    object-fit: cover; /* Ensures images fill the frame without distortion */
+    transition: transform 0.4s ease, filter 0.3s ease; /* Smooth scaling and filter effect */
 }
   
 /* Image hover effect */
