@@ -16,8 +16,8 @@ body {
 	line-height: 1.9rem;
 	font-family: 'Montserrat', sans-serif;
 	background-color: #fff;
-	margin-left: 6rem;
-	margin-right: 6rem;			
+	margin-left: 15vw;
+	margin-right: 15vw;			
 }
 
 /* Basic text contents of each page */
@@ -220,29 +220,23 @@ body {
 /***********************************GALLERY BEGIN***********************************/
 .galleryContainer {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap onto the next row */
-}
-
-.galleryContainer img {
-    width: 100%;
-    height: auto;
+    flex-wrap: wrap; /* Allows images to wrap onto the next row */
 }
 
 .galleryImage {
-    flex: 1 1 calc(33% - 9px); /* 25% width for 4 columns, accounting for gap */
-	aspect-ratio: 3 / 4; /* Force each container to have a consistent 3:4 ratio */
-	padding-left: 6px;
-	padding-right: 6px;
-	position: relative;
-	overflow: hidden; /* Ensures images don't spill out of their container */
-	transition: transform 0.3s ease, color 0.5s ease;	
+    flex: 1 1 calc(33% - 9px); /* Sets 3 images per row with space */
+    aspect-ratio: 3 / 4; /* Forces a 3:4 aspect ratio for uniformity */
+    overflow: hidden; /* Ensures images don't overflow their container */
+    position: relative;
+    margin: 6px; /* Adds spacing between images */
+	padding-bottom: 1rem
 }
 
-/* Image styling */
-.galleryImage img {	
-	width: 100%;
-    height: auto;
-	transition: transform 0.7s ease, filter 0.7s ease; /* Smooth transition for scaling and filter effects */
+.galleryImage img {
+    width: 100%;
+    height: 100%; /* Makes images fill the container completely */
+    object-fit: cover; /* Keeps image's aspect ratio, fills container */
+    transition: transform 0.7s ease, filter 0.7s ease; /* Smooth transition for effects */
 }
 
 /* Style the overlay which is displayed when an iamge is hovered over */
@@ -251,6 +245,7 @@ body {
 	background: rgba(226, 226, 226, 0.288);
 	visibility: hidden;
 	align-items: center;
+	line-height: 2vw;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -264,8 +259,8 @@ body {
 
 /* Style the description shown in the overlay */
 .galleryDate {
-	transform: translateY(1em);
-	font-size: 2rem;
+    font-size: 1.5vw; /* Text scales based on viewport width */
+    letter-spacing: 0.1vw; /* Adjusts spacing as well */
 	font-weight: 100;
 	letter-spacing: 10px;
 	color: #FFFFFF;
@@ -273,8 +268,8 @@ body {
 
 /* Style the location given to each image */
 .galleryTitle {
-	font-size: 2rem;
-	letter-spacing: 5px;
+    font-size: 2.4vw; /* Text scales based on viewport width */
+    letter-spacing: 0.2vw; /* Adjusts spacing as well */
 	font-weight: bold;
 	color: #FFFFFF;
 }
@@ -605,6 +600,9 @@ body {
 		letter-spacing: 5px;
 		color: #FFFFFF;
 	}
+	.galleryOverlay {
+		line-height: 2rem;
+	}
 	/* Style the location given to each image */
 	.galleryTitle {
 		font-size: 2rem;
@@ -668,6 +666,177 @@ body {
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	}
 }
+
+/* Style for Tablets */
+@media only screen and (max-width: 1024px) and (min-width: 800px){
+	/** HEADER **/
+	header {
+		height: 5em;
+		display: flex;
+		flex-direction: column;
+		width: 100%;	
+		padding-bottom: 3.2rem;
+	}
+	body {
+		color: #000000;
+		letter-spacing: 0.05rem;
+		font-family: 'Montserrat', sans-serif;
+		background-color: #fff;
+		margin: 0 auto;	
+		width: 100%;	
+	}
+	.banner {
+		display: flex;
+		justify-content: center;
+	}
+	.bannerTitle {
+		margin: 0;
+		position: absolute;
+		top: 0%;
+	}
+	.bannerTitle h1 a {
+		font-size: 1.4rem; /* Larger, bolder font */
+		font-weight: 900;
+		letter-spacing: 7px; /* Slightly increased letter spacing */
+		margin: 0;
+		justify-content: center;
+		text-align: center;
+		color: #000;
+		text-decoration: none;
+	}
+	.pageTitle {
+		font-size: 3rem;
+	}
+	.bannerNav {
+		text-decoration: none;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		text-align: 0;
+		position: relative;
+		top: 100%;
+	}
+	.bannerNav ul {
+		text-decoration: none;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		text-align: 0;
+		position: relative;
+		top: 100%;
+		left: 50%;
+	}
+	.bannerNav a {
+		text-decoration: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.bannerNav a:hover{
+		color: black;	
+	}
+	.bannerNav ul {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	.bannerNav ul li a {
+		display: inline-block;	
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 1rem;
+		color: #000000;
+		transition: transform 0.5s ease, color 0.5s ease; /* Smooth transition for nav links */
+	}
+	.bannerNav ul li a:hover {
+		transform: scale(1.1); /* Slightly larger on hover */
+		color: #525252; /* Darker on hover */
+	}
+	.bannerNav a:hover {
+		opacity: 0.7;
+	}
+	.galleryImage {
+		flex: 1 1 calc(40% - 9px); /* 25% width for 4 columns, accounting for gap */
+		margin: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.galleryDate {
+		transform: translateY(1em);
+		font-size: 1.8rem;
+		font-weight: 100;
+		letter-spacing: 5px;
+		color: #FFFFFF;
+	}
+	.galleryOverlay {
+		line-height: 2rem;
+	}
+	/* Style the location given to each image */
+	.galleryTitle {
+		font-size: 2rem;
+		letter-spacing: 5px;
+		font-weight: bold;
+		color: #FFFFFF;
+	}
+	.album {
+		padding: 10px;
+	}
+	.albumImage {
+		flex: 1 1 calc(45% - 25px); /* 25% width for 4 columns, accounting for gap */
+		margin: 0;
+		aspect-ratio: 3 / 4; /* Force each container to have a consistent 3:4 ratio */
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+	}
+	.albumTitle a {
+		font-size: 2.1rem;
+		font-weight: 600;
+	}
+	/* Responsive layout - makes a two column-layout instead of four columns */
+	.shop,
+	.gallery,
+	.contact {
+		margin: auto;
+		width: auto;
+		padding: 0;
+	}
+	/** SHOP PAGE**/
+	.shops {
+		display: block;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}	
+	.shops img {
+		width: 40%;
+		height: 20%;
+	}
+	/** CONTACT PAGE**/
+	.content .socialMedia a{
+		display: inline-block;
+	}
+	.content .socialMedia .fa-linkedin,
+	.content .socialMedia .fa-instagram{
+		border-radius: 10%;
+		width: 2rem;
+	}
+	.content {
+		min-height: calc(100vh - 39rem);
+	}
+	.contact-form {
+		margin-bottom: 50px;
+		background-color: #fff;
+		padding: none;
+		width: 70%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto; 
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+}
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 	.galleryColumn {
