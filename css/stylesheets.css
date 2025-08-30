@@ -256,6 +256,44 @@ body {
     height: 100%;
 }
 
+.galleryContainer-mainpage {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap onto the next row */
+}
+
+.galleryImage-mainpage {
+    flex: 1 1 calc(33% - 9px); /* Sets 3 images per row with space */
+    aspect-ratio: 3 / 4; /* Forces a 3:4 aspect ratio for uniformity */
+    overflow: hidden; /* Ensures images don't overflow their container */
+    position: relative;
+    margin: 6px; /* Adds spacing between images */
+}
+
+.galleryImage-mainpage img {
+    width: 100%;
+    height: 100%; /* Makes images fill the container completely */
+    object-fit: cover; /* Keeps image's aspect ratio, fills container */
+    transition: transform 0.7s ease, filter 0.7s ease; /* Smooth transition for effects */
+}
+
+/* Style the overlay which is displayed when an iamge is hovered over */
+.galleryOverlay-mainpage {
+	position: absolute;
+	background: rgba(226, 226, 226, 0.288);
+	visibility: hidden;
+	align-items: center;
+	line-height: 2vw;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
 /* Style the description shown in the overlay */
 .galleryDate {
     font-size: 1.5vw; /* Text scales based on viewport width */

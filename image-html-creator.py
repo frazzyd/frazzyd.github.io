@@ -2,9 +2,9 @@ import os
 import re
 
 # Configuration
-fullsize_folder = './images/albums/scotland2024/fullsize'  # Folder with full-size images
-thumbnail_folder = './images/albums/scotland2024/thumbnails'  # Folder with thumbnails
-html_file_path = 'scotland2024.html'                  # Path to the HTML file to modify
+fullsize_folder = './images/albums/norway2025/fullsize'  # Folder with full-size images
+thumbnail_folder = './images/albums/norway2025/thumbnails'  # Folder with thumbnails
+html_file_path = 'norway2025.html'                  # Path to the HTML file to modify
 insert_marker = '<!-- INSERT GALLERY HERE -->' # Marker in HTML file where new HTML should be inserted
 
 def generate_html_for_image(image_name):
@@ -13,13 +13,12 @@ def generate_html_for_image(image_name):
     # Generate paths for the full image and thumbnail
     full_image_path = f"{fullsize_folder}/{image_name}".replace("\\", "/")
     thumbnail_path = f"{thumbnail_folder}/{image_name}".replace("\\", "/")
-    title = f"{base_name.replace('_', ' ').title()}, May 2024"
     
     # Generate HTML structure for the image
     html = f"""
-            <div class="albumImage" data-tags="street,portrait,blackwhite">
-                <a href="{full_image_path}" data-lightbox="gallery" data-title="Scotland, 2024">
-                    <img data-src="{thumbnail_path}" alt="Scotland" class="fade-in lazy-image">
+            <div class="albumImage" data-tags="street,portrait,color">
+                <a href="{full_image_path}" data-lightbox="gallery" data-title="Norway, April 2025">
+                    <img data-src="{thumbnail_path}" alt="Norway" class="fade-in lazy-image">
                 </a>	
             </div>"""
     return html
