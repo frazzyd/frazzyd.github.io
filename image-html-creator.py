@@ -2,9 +2,9 @@ import os
 import re
 
 # Configuration
-fullsize_folder = 'C:\\GitHub\\frazzyd.github.io\\images/albums/riga2026/fullsize'  # Folder with full-size images
-thumbnail_folder = 'C:\\GitHub\\frazzyd.github.io\\images/albums/riga2026/thumbnails'  # Folder with thumbnails
-html_file_path = 'C:\\GitHub\\frazzyd.github.io\\riga2026.html'                  # Path to the HTML file to modify
+fullsize_folder = 'C:\\GitHub\\frazzyd.github.io\\images/albums/carlmarah2026/fullsize'  # Folder with full-size images
+thumbnail_folder = 'C:\\GitHub\\frazzyd.github.io\\images/albums/carlmarah2026/thumbnails'  # Folder with thumbnails
+html_file_path = 'C:\\GitHub\\frazzyd.github.io\\carlmarah-voodoorooms.html'                  # Path to the HTML file to modify
 insert_marker = '<!-- INSERT GALLERY HERE -->' # Marker in HTML file where new HTML should be inserted
 
 def generate_html_for_image(image_name):
