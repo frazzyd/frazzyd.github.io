@@ -2,9 +2,9 @@ import os
 import re
 
 # Configuration
-fullsize_folder = 'C:\\GitHub\\frazzyd.github.io\\images/albums/carlmarah2026/fullsize'  # Folder with full-size images
-thumbnail_folder = 'C:\\GitHub\\frazzyd.github.io\\images/albums/carlmarah2026/thumbnails'  # Folder with thumbnails
-html_file_path = 'C:\\GitHub\\frazzyd.github.io\\carlmarah-voodoorooms.html'                  # Path to the HTML file to modify
+fullsize_folder = 'C:\\GitHub\\frazzyd.github.io\\images/albums/militariegun2026/fullsize'  # Folder with full-size images
+thumbnail_folder = 'C:\\GitHub\\frazzyd.github.io\\images/albums/militariegun2026/thumbnails'  # Folder with thumbnails
+html_file_path = 'C:\\GitHub\\frazzyd.github.io\\militariegun2026-caves.html'                  # Path to the HTML file to modify
 insert_marker = '<!-- INSERT GALLERY HERE -->' # Marker in HTML file where new HTML should be inserted
 
 def generate_html_for_image(image_name):
@@ -17,8 +17,8 @@ def generate_html_for_image(image_name):
     # Generate HTML structure for the image
     html = f"""
             <div class="albumImage" data-tags="portrait,color">
-                <a href="{full_image_path}" data-lightbox="gallery" data-title="Riga, April 2026">
-                    <img data-src="{thumbnail_path}" alt="Riga" class="fade-in lazy-image">
+                <a href="{full_image_path}" data-lightbox="gallery" data-title="Militarie Gun @ The Caves, July 2026">
+                    <img data-src="{thumbnail_path}" alt="Militarie Gun @ The Caves" class="fade-in lazy-image">
                 </a>	
             </div>"""
     return html
